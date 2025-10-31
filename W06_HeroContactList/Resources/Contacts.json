@@ -1,0 +1,15 @@
+[
+    {
+      "id": 0,
+      "first_name": "Clark",
+      "last_name": "Kent",
+      "avatar": "ClarkKent.jpg"
+    },
+    {
+      "id": 1,
+      "first_name": "Tony",
+      "last_name": "Stark",
+      "avatar": "TonyStark.jpg"
+    }
+]
+  

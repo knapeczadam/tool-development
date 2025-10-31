@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<destinyPlayer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <iconPath>icon_psn.png</iconPath>
+  <membershipId>4611686018428397359</membershipId>
+  <displayName>Professorbroman</displayName>
+  <characters>
+    <character>
+      <subClassType>Hunter</subClassType>
+      <baseLevel>40</baseLevel>
+      <lightLevel>399</lightLevel>
+      <lighLevelIconPath>/common/destiny_content/icons/d4eb2b691f3b5afe56727b1a1af044f0.png</lighLevelIconPath>
+      <grimoireScore>5165</grimoireScore>
+      <grimoireIconPath>icon_grimoire.png</grimoireIconPath>
+      <emblemPath>/common/destiny_content/icons/92cae1f2c5f525dd480435df858dcf86.jpg</emblemPath>
+      <backgroundPath>/common/destiny_content/icons/f2d62da365424009c4d859e3b471f062.jpg</backgroundPath>
+      <statIntellect>
+        <name>Intellect</name>
+        <description>Decreases the cooldown of your super ability.
+
+Intellect can be increased by your Armor.</description>
+        <iconPath>/common/destiny_content/icons/bc29ca6f667275f7fb40ab618b8e4fc0.png</iconPath>
+        <value>158</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statIntellect>
+      <statDiscipline>
+        <name>Discipline</name>
+        <description>Discipline decreases the cooldown time of your grenades, allowing you to use them more often.
+
+Find and equip armor with Discipline to boost this effect.</description>
+        <iconPath>/common/destiny_content/icons/4948964e3e26a8571e37b2f8ff0a5fef.png</iconPath>
+        <value>257</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statDiscipline>
+      <statStrength>
+        <name>Strength</name>
+        <description>Strength reduces the cooldown time of your melee ability, allowing you to use it more often.
+
+Find and equip armor with Strength to boost this effect.</description>
+        <iconPath>/common/destiny_content/icons/36b86fbc8aaf580df2b5fe7626718964.png</iconPath>
+        <value>249</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statStrength>
+      <items>
+        <item>
+          <itemName>Gunslinger</itemName>
+          <itemDescription>A lone wolf who lives for the perfect shot.</itemDescription>
+          <iconPath>e560f1db0bb25c5cc94e6bd6d511bef3.jpg</iconPath>
+          <tierType>Basic</tierType>
+          <classType>Hunter</classType>
+          <damageType>Thermal</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Burning Eye (Adept)</itemName>
+          <itemDescription>"Turn your eyes inward, upon your ideal self." —Parables of the Allspring</itemDescription>
+          <iconPath>14b7b31225b637b137bb7f2963501ffc.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Kinetic</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>The Winged Word</itemName>
+          <itemDescription>"You cannot keep it silent." —Fractal Scrolls</itemDescription>
+          <iconPath>1b60928b97d50e0644aa5e37db20e51f.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Arc</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Iron Gjallarhorn</itemName>
+          <itemDescription>A finely-crafted testament to the many heroes of the Last City</itemDescription>
+          <iconPath>e250828d946bf4e248914f7450547b54.jpg</iconPath>
+          <tierType>Exotic</tierType>
+          <classType>Unknown</classType>
+          <damageType>Thermal</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Towerwatch Shell</itemName>
+          <itemDescription>For Ghosts who serve the Vanguard.</itemDescription>
+          <iconPath>943a06e2af3e6c73aca98e3bc93edcfc.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Lion's Vigil Mask</itemName>
+          <itemDescription>"We watch, and we wait. And we train." —Fractal Scrolls</itemDescription>
+          <iconPath>8f9d1a17a5dcbd54a836b8e9a2a640f2.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Hunter</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Spliced Nanomania Grasps</itemName>
+          <itemDescription>Let's get right to it. How can Clovis Bray help the Exodus project? ~SIVA.MEM.CL001</itemDescription>
+          <iconPath>1f8fafdf2417493cb1adb430109a510b.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Hunter</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Lion's Vigil Vest</itemName>
+          <itemDescription>"If you wish to learn the ways of war, look around you." —Parables of the Allspring</itemDescription>
+          <iconPath>d90f72a6bf1d879b84dbd3a3fa3038e8.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Hunter</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Lion's Vigil Strides</itemName>
+          <itemDescription>"The challenge will come when you least expect it. You must be ready." —Fractal Scrolls</itemDescription>
+          <iconPath>6aa7847190cd1348f5161cd8e06315a3.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Hunter</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Lion's Vigil Cloak</itemName>
+          <itemDescription>"When we hunt together, we cannot fail." —Fractal Scrolls</itemDescription>
+          <iconPath>d8bcc1a6246b73715fe3f9a59c254189.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Hunter</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Memory of Jolder</itemName>
+          <itemDescription>"If I am to die, let it be in battle, with weapons in my hands and laughter in my heart." —Lady Jolder</itemDescription>
+          <iconPath>ac8336df55d394d682adb84c196c15a1.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>EV-38 Laurelbearer</itemName>
+          <itemDescription>There are many who seek victory. Few will wear the laurel.</itemDescription>
+          <iconPath>77e5694d93079cbb0f135477aa81f85b.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Happy Horn</itemName>
+          <itemDescription>Blow your own horn.</itemDescription>
+          <iconPath>6ee7c393111090a5f95d8a4a256aa681.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>"Comitatus"</itemName>
+          <itemDescription>Forge a new fellowship.</itemDescription>
+          <iconPath>eefd3e9478aa6d7e980fee3d677365ad.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>The Old Guard</itemName>
+          <itemDescription>Equip this shader to change the color of your armor.</itemDescription>
+          <iconPath>b4efc709b9af407a2cbae399a4e9502a.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Vosik's Venom</itemName>
+          <iconPath>92cae1f2c5f525dd480435df858dcf86.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Tantrum</itemName>
+          <itemDescription>No no no no NO!</itemDescription>
+          <iconPath>52e71c6e39d58bef9b4b65aafa83b4c4.jpg</iconPath>
+          <tierType>Rare</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+      </items>
+    </character>
+    <character>
+      <subClassType>Warlock</subClassType>
+      <baseLevel>40</baseLevel>
+      <lightLevel>399</lightLevel>
+      <lighLevelIconPath>/common/destiny_content/icons/d4eb2b691f3b5afe56727b1a1af044f0.png</lighLevelIconPath>
+      <grimoireScore>5165</grimoireScore>
+      <grimoireIconPath>icon_grimoire.png</grimoireIconPath>
+      <emblemPath>/common/destiny_content/icons/1b05977e8d0a56538c8a74ce6335ba28.jpg</emblemPath>
+      <backgroundPath>/common/destiny_content/icons/4f4b102e4956b642bd65d3bb114c2f77.jpg</backgroundPath>
+      <statIntellect>
+        <name>Intellect</name>
+        <description>Decreases the cooldown of your super ability.
+
+Intellect can be increased by your Armor.</description>
+        <iconPath>/common/destiny_content/icons/bc29ca6f667275f7fb40ab618b8e4fc0.png</iconPath>
+        <value>236</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statIntellect>
+      <statDiscipline>
+        <name>Discipline</name>
+        <description>Discipline decreases the cooldown time of your grenades, allowing you to use them more often.
+
+Find and equip armor with Discipline to boost this effect.</description>
+        <iconPath>/common/destiny_content/icons/4948964e3e26a8571e37b2f8ff0a5fef.png</iconPath>
+        <value>231</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statDiscipline>
+      <statStrength>
+        <name>Strength</name>
+        <description>Strength reduces the cooldown time of your melee ability, allowing you to use it more often.
+
+Find and equip armor with Strength to boost this effect.</description>
+        <iconPath>/common/destiny_content/icons/36b86fbc8aaf580df2b5fe7626718964.png</iconPath>
+        <value>152</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statStrength>
+      <items>
+        <item>
+          <itemName>Voidwalker</itemName>
+          <itemDescription>Those who have stared into the Void are not bound by the laws of space and time.</itemDescription>
+          <iconPath>602276d222a9037c3363db5b5deda85b.jpg</iconPath>
+          <tierType>Basic</tierType>
+          <classType>Warlock</classType>
+          <damageType>Void</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>STEEL MEDULLA~</itemName>
+          <itemDescription>~replicate~ devastate your foes ~consume~ Herja ~repeat</itemDescription>
+          <iconPath>00cecacca827ef11448927ac4b27c69b.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Kinetic</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Impeacher V</itemName>
+          <itemDescription>Executor-issued sidearm for loyal supporters of the New Monarchy.</itemDescription>
+          <iconPath>da0be6a6068e536319c693f000cc6358.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Thermal</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Unending Deluge III</itemName>
+          <itemDescription>When it rains…</itemDescription>
+          <iconPath>4dc78cc9d962ea4e60f7ca735e46c800.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Thermal</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Ghost Ghost</itemName>
+          <itemDescription>For Ghosts who prefer to go in disguise.</itemDescription>
+          <iconPath>62652220aa038d497cb4c41bbbc118ef.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Cobra's Vigil Hood</itemName>
+          <itemDescription>"We watch, and we wait. And we train." —Fractal Scrolls</itemDescription>
+          <iconPath>f210c539968e90b0cecebeab05aaabd1.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Warlock</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Ophidian Aspect</itemName>
+          <itemDescription>"Have I the aspic in my lips?"</itemDescription>
+          <iconPath>b4cedb3462f26a6f063ced55ec73d2ee.jpg</iconPath>
+          <tierType>Exotic</tierType>
+          <classType>Warlock</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Spliced Red Miasma Robes</itemName>
+          <itemDescription>Well, SIVA requires no external power source, so…forever. ~SIVA.MEM.WB007</itemDescription>
+          <iconPath>8cb1a7ea1d75d13fac14a903823ca4d0.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Warlock</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Red Miasma Boots</itemName>
+          <itemDescription>General, poorly worded or malicious code is the fault of the programmer, not SIVA itself. ~SIVA.MEM.WB010</itemDescription>
+          <iconPath>57d302566e855e0476903a4482c1011a.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Warlock</classType>
+          <damageType>None</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Cobra's Vigil Bond</itemName>
+          <itemDescription>"We learn to live with this poison in our veins." —Parables of the Allspring</itemDescription>
+          <iconPath>95f62ec144bb63337132e3f0f05cd100.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Warlock</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Memory of Timur</itemName>
+          <itemDescription>"Ask strange questions. Our questions shape the reality that answers them." —Lord Timur</itemDescription>
+          <iconPath>d56097c1648a16a540299969aceb326c.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Flamecourser</itemName>
+          <itemDescription>Fire in your eyes, ash in your wake.</itemDescription>
+          <iconPath>e36b9b5c728ed7c8f1747b8819ac7fa0.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Happy Horn</itemName>
+          <itemDescription>Blow your own horn.</itemDescription>
+          <iconPath>6ee7c393111090a5f95d8a4a256aa681.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>"Fatal Vision"</itemName>
+          <itemDescription>Come, let me clutch thee.</itemDescription>
+          <iconPath>8d185656c538fed8cc69fd1e48fcf440.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Knight-Errant</itemName>
+          <itemDescription>Equip this shader to change the color of your armor.</itemDescription>
+          <iconPath>d09e2990e74a526220e0303a26151e6d.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Solar Labor</itemName>
+          <iconPath>1b05977e8d0a56538c8a74ce6335ba28.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Point</itemName>
+          <itemDescription>That, that there!</itemDescription>
+          <iconPath>010bc67d1da717f0143647a5dbe85f42.jpg</iconPath>
+          <tierType>Rare</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+      </items>
+    </character>
+    <character>
+      <subClassType>Titan</subClassType>
+      <baseLevel>40</baseLevel>
+      <lightLevel>400</lightLevel>
+      <lighLevelIconPath>/common/destiny_content/icons/d4eb2b691f3b5afe56727b1a1af044f0.png</lighLevelIconPath>
+      <grimoireScore>5235</grimoireScore>
+      <grimoireIconPath>icon_grimoire.png</grimoireIconPath>
+      <emblemPath>/common/destiny_content/icons/f9fbcad29097c102e7df0b7dd97a63cd.jpg</emblemPath>
+      <backgroundPath>/common/destiny_content/icons/edbace7638818cb96b870b2f9612fe95.jpg</backgroundPath>
+      <statIntellect>
+        <name>Intellect</name>
+        <description>Decreases the cooldown of your super ability.
+
+Intellect can be increased by your Armor.</description>
+        <iconPath>/common/destiny_content/icons/bc29ca6f667275f7fb40ab618b8e4fc0.png</iconPath>
+        <value>243</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statIntellect>
+      <statDiscipline>
+        <name>Discipline</name>
+        <description>Discipline decreases the cooldown time of your grenades, allowing you to use them more often.
+
+Find and equip armor with Discipline to boost this effect.</description>
+        <iconPath>/common/destiny_content/icons/4948964e3e26a8571e37b2f8ff0a5fef.png</iconPath>
+        <value>211</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statDiscipline>
+      <statStrength>
+        <name>Strength</name>
+        <description>Strength reduces the cooldown time of your melee ability, allowing you to use it more often.
+
+Find and equip armor with Strength to boost this effect.</description>
+        <iconPath>/common/destiny_content/icons/36b86fbc8aaf580df2b5fe7626718964.png</iconPath>
+        <value>237</value>
+        <minimum>0</minimum>
+        <maximum>0</maximum>
+      </statStrength>
+      <items>
+        <item>
+          <itemName>Striker</itemName>
+          <itemDescription>At close quarters a fist is better than any gun.</itemDescription>
+          <iconPath>18de4d9a91d824bc67ea6941d4d18cc0.jpg</iconPath>
+          <tierType>Basic</tierType>
+          <classType>Titan</classType>
+          <damageType>Arc</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>GENESIS CHAIN~</itemName>
+          <itemDescription>SUROS ARI-41 ~insert(SIVA in THIS(current projectile))</itemDescription>
+          <iconPath>21bcc64ab9af70ee7ccd59fe0710b4cf.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Kinetic</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>But Not Forgotten</itemName>
+          <itemDescription>Not even the dead are truly gone.</itemDescription>
+          <iconPath>7d71f2915bc14c1e5a88cc11ee514435.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Arc</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Void Edge</itemName>
+          <itemDescription>The Hadium metal of what was once Willbreaker courses with conflicting energies.</itemDescription>
+          <iconPath>f6215a7c8297d17cf4aee6a4508d5e2f.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>Void</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Iron Song Shell</itemName>
+          <itemDescription>For Ghosts who have lent their voices to the song of the Iron Banner.</itemDescription>
+          <iconPath>5801083a14d119e4854745cdf7ae2d70.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Spliced Cosmoclast Helm</itemName>
+          <itemDescription>General, my team did not intend for SIVA to have military applications. ~SIVA.MEM.WB014</itemDescription>
+          <iconPath>d8e503872e86f63c8512d1fb243f8140.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Titan</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Spliced Cosmoclast Gauntlets</itemName>
+          <itemDescription>Doctor Bray, I'm sure you've realized SIVA's applications extend beyond colonization. ~SIVA.MEM.CL011</itemDescription>
+          <iconPath>3f1f434b71d22be72b2d9ca894b238fd.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Titan</classType>
+          <damageType>None</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Twilight Garrison</itemName>
+          <itemDescription>"One day the Last City will be known as the First City."</itemDescription>
+          <iconPath>1d707a10c8b1a64eb4183800dfb74c26.jpg</iconPath>
+          <tierType>Exotic</tierType>
+          <classType>Titan</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Spliced Cosmoclast Greaves</itemName>
+          <itemDescription>Willa, some of history's greatest inventions began as unintended side effects. ~SIVA.MEM.CL015</itemDescription>
+          <iconPath>f72dca1a5a0ea180cf18ae7d372006fd.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Titan</classType>
+          <damageType>None</damageType>
+          <isGridComplete>true</isGridComplete>
+        </item>
+        <item>
+          <itemName>Spliced Cosmoclast Mark</itemName>
+          <itemDescription>The Exodus program would be interested in exploring SIVA's defensive applications. ~SIVA.MEM.CL013</itemDescription>
+          <iconPath>5abd11d04085f10588bf51128e65af28.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Titan</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Memory of Radegast</itemName>
+          <itemDescription>"Our lives are no longer our own. We have sworn them in service to the Traveler, and to humanity." —Lord Radegast</itemDescription>
+          <iconPath>3b05d09abf5747e67295a811ad3a9dc6.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>S-35 Jealousy</itemName>
+          <itemDescription>It's what they feel when they see you.</itemDescription>
+          <iconPath>9a4bbc62fce3003d868a32f370ac4151.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Gjallar Horn</itemName>
+          <itemDescription>The sound of beautiful destruction.</itemDescription>
+          <iconPath>db3fbd10664d44c8fa866ba8b44e0da7.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Nanophoenix</itemName>
+          <itemDescription>All destruction is an act of creation. And vice versa.</itemDescription>
+          <iconPath>0cb689b9df1362ccc92183974cc8afce.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>The Old Guard</itemName>
+          <itemDescription>Equip this shader to change the color of your armor.</itemDescription>
+          <iconPath>b4efc709b9af407a2cbae399a4e9502a.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Machina Sacra</itemName>
+          <iconPath>f9fbcad29097c102e7df0b7dd97a63cd.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+        <item>
+          <itemName>Wiggly Leg Dance</itemName>
+          <itemDescription>Show off your moves.</itemDescription>
+          <iconPath>e17bcb3668d4086e0f8b4c9fc8f6ac4f.jpg</iconPath>
+          <tierType>Superior</tierType>
+          <classType>Unknown</classType>
+          <damageType>None</damageType>
+          <isGridComplete>false</isGridComplete>
+        </item>
+      </items>
+    </character>
+  </characters>
+</destinyPlayer>

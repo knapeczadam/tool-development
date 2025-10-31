@@ -1,0 +1,24 @@
+﻿<Window x:Class="W03_BooksWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W03_BooksWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="listBox" Margin="10,10,10,127"/>
+        <Button x:Name="btnOrder" Content="Order" HorizontalAlignment="Left" Margin="10,324,0,0" VerticalAlignment="Top" Height="23" Width="115" RenderTransformOrigin="0.237,0.487" Click="BtnOrder_Click"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="130,388,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,-0.072" Width="110" Click="BtnSave_Click"/>
+        <Button x:Name="btnShowDescription" Content="Show Description" HorizontalAlignment="Left" Margin="10,358,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.211,0.551" Width="230" Click="BtnShowDescription_Click"/>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="10,388,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.017,0.053" Width="114" Click="BtnLoad_Click"/>
+        <Button x:Name="btnFilter" Content="Filter" HorizontalAlignment="Left" Margin="504,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,-0.21" Width="111" Click="BtnFilter_Click"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="504,358,0,0" VerticalAlignment="Top" Width="117" Click="BtnSearch_Click"/>
+        <ComboBox x:Name="comboOrder" HorizontalAlignment="Left" Margin="130,324,0,0" VerticalAlignment="Top" Width="110">
+            <ComboBoxItem Content="Ascending" IsSelected="True"/>
+            <ComboBoxItem Content="Descending"/>
+        </ComboBox>
+        <ComboBox x:Name="comboFilter" HorizontalAlignment="Left" Margin="632,324,0,0" VerticalAlignment="Top" Width="158"/>
+        <TextBox x:Name="searchBox" HorizontalAlignment="Left" Margin="632,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+    </Grid>
+</Window>

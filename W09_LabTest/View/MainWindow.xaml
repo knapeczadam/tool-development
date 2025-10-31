@@ -1,0 +1,420 @@
+﻿<Window x:Class="W09_LabTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W09_LabTest"
+        xmlns:viewModel="clr-namespace:W09_LabTest.ViewModel"
+        mc:Ignorable="d"
+        x:Name="root"
+        Title="ToolDev LabTest – Knapecz Ádám"
+        Height="954"
+        Width="900"
+        Background="Black">
+    <Window.DataContext>
+        <viewModel:MainViewModel />
+    </Window.DataContext>
+    
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Bg Image -->
+        <!--++++++++++-->
+        <Image Grid.RowSpan="2"
+               Source="/Resources/Images/grunge_bg.jpg"
+               Stretch="UniformToFill"
+               Opacity="0.8" />
+
+        <!-- Menu Item (File) -->
+        <!--++++++++++++++++++-->
+        <Menu Grid.Row="0">
+            <!-- TODO (Assignment part 3) : Link to the load and save methods in MainViewModel -->
+            <MenuItem Header="_File">
+                <MenuItem Header="_Load" Command="{Binding Path=LoadMatchesCommand}"/>
+                <MenuItem Header="_Save" Command="{Binding Path=SaveMatchesCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Main Grid -->
+        <!--+++++++++++-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!-- Main Title -->
+            <!--++++++++++++-->
+            <Label Grid.ColumnSpan="2"
+                   FontSize="50"
+                   HorizontalAlignment="Stretch"
+                   HorizontalContentAlignment="Center"
+                   VerticalAlignment="Center"
+                   Background="#000"
+                   FontFamily="{StaticResource MainFont}"
+                   Foreground="{StaticResource TitleColor}"
+                   Content="Apex Legends - Matches" />
+
+            <!-- Match Selection (left) -->
+            <!--++++++++++++++++++++++++-->
+            <Grid Grid.Column="0"
+                  Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <!-- List of Matches -->
+                <ListView Margin="5"
+                          Grid.Row="1"
+                          Background="{StaticResource BackgroundColor}"
+                          ItemsSource="{Binding Matches}"
+                          SelectedItem="{Binding SelectedMatch}"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0"
+                                        Content="-"
+                                        Width="30"
+                                        Command="{Binding DataContext.RemoveMatchCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                        CommandParameter="{Binding}" />
+                                <Label Grid.Column="1"
+                                       Content="{Binding MatchName}"
+                                       Foreground="{StaticResource TextColor}"
+                                       FontFamily="{StaticResource SecondaryFont}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!-- Create new match button -->
+                <Button Grid.Row="0"
+                        Margin="5"
+                        FontFamily="{StaticResource SecondaryFont}"
+                        Command="{Binding AddMatchCommand}"
+                        FontSize="16">Add Match</Button>
+
+            </Grid>
+
+            <!-- Match Details (right) -->
+            <!--++++++++++++++++++++++++-->
+            <!-- DataContext is bound to the SelectedMatch (type: MatchViewModel)  -->
+            <ContentControl x:Name="matchView"
+                            Margin="10"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            DataContext="{Binding SelectedMatch}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <StackPanel Orientation="Vertical"
+                                Margin="20,0">
+
+                        <!-- Match Name -->
+                        <!-- ========== -->
+                        <Label Grid.Row="0"
+                               Grid.Column="0"
+                               Content="Match Name:"
+                               FontFamily="{StaticResource MainFont}"
+                               Foreground="{StaticResource SubtitleColor}"
+                               FontSize="16" />
+                        <TextBox Text="{Binding MatchName, UpdateSourceTrigger=PropertyChanged}"
+                                 FontFamily="{StaticResource MainFont}"
+                                 Foreground="{StaticResource SubtitleColor}"
+                                 FontSize="40"
+                                 Background="Black" />
+
+                        <!-- Map Selector + Selected Map Info -->
+                        <!-- =================== -->
+                        <Label Grid.Row="0"
+                               Grid.Column="0"
+                               Content="Map:"
+                               FontFamily="{StaticResource MainFont}"
+                               Foreground="{StaticResource SubtitleColor}"
+                               FontSize="16" />
+                        <Grid Background="Black"
+                              Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <!-- Map selection -->
+                                <RowDefinition Height="Auto" />
+                                <!-- Image -->
+                                <RowDefinition Height="Auto" />
+                                <!-- Planet Name -->
+                                <RowDefinition Height="Auto" />
+                                <!-- Lore text-->
+                            </Grid.RowDefinitions>
+
+                            <!-- Map Selection ComboBox -->
+                            <Label Content="Select Map:"
+                                   Foreground="{StaticResource TextColor}"
+                                   FontFamily="{StaticResource SecondaryFont}"
+                                   VerticalAlignment="Center" />
+                            <!-- TODO: link source to the list of available maps, link the selected item to the selected map-->
+                            <ComboBox Grid.Row="0"
+                                      Grid.Column="1"
+                                      DisplayMemberPath="Name"
+                                      VerticalContentAlignment="Center"
+                                      ItemsSource="{Binding Path=AvailableMaps}"
+                                      SelectedItem="{Binding Path=SelectedMap}"
+                                      Margin="5" />
+
+                            <!-- Map Image -->
+                            <TextBlock Grid.Row="1"
+                                       Grid.Column="0"
+                                       Text="Image:"
+                                       FontFamily="{StaticResource MainFont}"
+                                       Foreground="{StaticResource SubtitleColor}"
+                                       FontSize="16"
+                                       Margin="5" />
+                            <!-- TODO: link the image source to the path of the image, TIP: use the MapImagePathConverter class-->
+                            <Image Grid.Row="1"
+                                   Grid.Column="1"
+                                   Grid.ColumnSpan="1"
+                                   Height="200"
+                                   Source="{Binding Path=SelectedMap.ImageName, Converter={StaticResource MapImagePathConverter}}"
+                                   HorizontalAlignment="Left"
+                                   Margin="5" />
+
+                            <!-- Planet Name -->
+                            <TextBlock Grid.Row="2"
+                                       Grid.Column="0"
+                                       Text="Planet:"
+                                       FontFamily="{StaticResource MainFont}"
+                                       Foreground="{StaticResource SubtitleColor}"
+                                       FontSize="16"
+                                       Margin="5" />
+                            <!-- TODO: Set the name of the planet -->
+                            <TextBlock Grid.Row="2"
+                                       Grid.Column="1"
+                                       Text="{Binding Path=SelectedMap.Planet}"
+                                       FontFamily="{StaticResource SecondaryFont}"
+                                       Foreground="{StaticResource TextColor}"
+                                       FontSize="12"
+                                       VerticalAlignment="Center"
+                                       Margin="5" />
+
+                            <!-- Lore text-->
+                            <TextBlock Grid.Row="3"
+                                       Grid.Column="0"
+                                       Text="Lore:"
+                                       FontFamily="{StaticResource MainFont}"
+                                       Foreground="{StaticResource SubtitleColor}"
+                                       FontSize="16"
+                                       Margin="5" />
+                            <!-- TODO: Set the text-->
+                            <TextBlock Grid.Row="3"
+                                       Grid.Column="1"
+                                       Text="{Binding Path=SelectedMap.Lore}"
+                                       FontFamily="{StaticResource SecondaryFont}"
+                                       Foreground="{StaticResource TextColor}"
+                                       FontSize="10"
+                                       TextWrapping="Wrap"
+                                       Margin="5" />
+
+                        </Grid>
+
+                        <!-- Legends Selector + Match Legends List -->
+                        <!-- ======================= -->
+                        <Label  Content="Legends:"
+                                FontFamily="{StaticResource MainFont}"
+                                Foreground="{StaticResource SubtitleColor}"
+                                FontSize="16" />
+
+                        <!-- Add new legend -->
+                        <Grid Background="Black">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Content="Add Legend:"
+                                   Foreground="{StaticResource TextColor}"
+                                   FontFamily="{StaticResource SecondaryFont}"
+                                   VerticalAlignment="Center" />
+                            <!-- TODO: bind source (available legends) -->
+                            <!-- TODO: bind selectedItem (selected legend) -->
+                            <ComboBox Grid.Row="0"
+                                      Grid.Column="1"
+                                      ItemsSource="{Binding Path=AvailableLegends}"
+                                      SelectedItem="{Binding Path=SelectedLegend}"
+                                      DisplayMemberPath="Name"
+                                      VerticalContentAlignment="Center"
+                                      Margin="5" />
+                            <!-- TODO: bind button command (AddLegend method) -->
+                            <!-- TODO: bind button commandParameter (Selected legend) -->
+                            <Button Width="100"
+                                    Grid.Column="2"
+                                    Margin="5"
+                                    Command="{Binding Path=AddLegendCommand}"
+                                    CommandParameter="{Binding Path=SelectedLegend}"
+                                    FontFamily="{StaticResource SecondaryFont}">Add</Button>
+
+                        </Grid>
+
+                        <!-- Match Legends -->
+                        <!-- TODO: bind to the collection of legends-->
+                        <ItemsControl Grid.Row="1"
+                                      Grid.ColumnSpan="2"
+                                      Background="Black"
+                                      ItemsSource="{Binding Path=MatchLegends}"
+                                      x:Name="hello1"
+                                      MinHeight="100">
+                            <ItemsControl.ItemTemplate >
+                                <DataTemplate x:Name="hello2" >
+                                    <Border BorderBrush="{StaticResource TitleColor}"
+                                            BorderThickness="1">
+                                        <Grid HorizontalAlignment="left"
+                                              ShowGridLines="False">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <!-- Remove button -->
+                                                <ColumnDefinition Width="100" />
+                                                <!-- Legend Image -->
+                                                <ColumnDefinition Width="Auto" />
+                                                <!-- Stat title-->
+                                                <ColumnDefinition Width="*" />
+                                                <!-- Stat value-->
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <!-- Legend Name-->
+                                                <RowDefinition Height="Auto" />
+                                                <!-- Full Name-->
+                                                <RowDefinition Height="Auto" />
+                                                <!-- Health -->
+                                                <RowDefinition Height="Auto" />
+                                                <!-- Attack -->
+                                                <RowDefinition Height="Auto" />
+                                                <!-- Defense -->
+                                                <RowDefinition Height="Auto" />
+                                                <!-- Speed -->
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Remove button: TODO: link to the RemoveLegend method from the MatchViewModel. TIP: requires binding to the parent ContentControl!-->
+                                            <Button Grid.Column="0"
+                                                    Grid.Row="0"
+                                                    Content="-"
+                                                    Margin="5"
+                                                    Background="Black"
+                                                    Foreground="white"
+                                                    Command="{Binding ElementName=matchView, Path=DataContext.RemoveLegendCommand }"
+                                                    CommandParameter="{Binding  }"
+                                                    Width="30"></Button>
+
+                                            <!-- TODO: link to the correct image, use the converter class in Converters.cs-->
+                                            <Image Grid.Column="1"
+                                                   Grid.RowSpan="6"
+                                                   Source="{Binding Path=Name, Converter={StaticResource LegendImagePathConverter}}"
+                                                   />
+
+                                            <!--Legend Name -->
+                                            <Label Grid.Row="0"
+                                                   Grid.Column="2"
+                                                   Grid.ColumnSpan="2"
+                                                   Content="{Binding Name}"
+                                                   Foreground="{StaticResource TitleColor}"
+                                                   FontFamily="{StaticResource MainFont}"
+                                                   FontSize="30" />
+
+                                            <!--Full Name-->
+                                            <TextBlock Grid.Row="1"
+                                                       Grid.Column="2"
+                                                       Margin="4,0"
+                                                       Text="Full Name:"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource MainFont}" />
+                                            <TextBlock Grid.Row="1"
+                                                       Grid.Column="3"
+                                                       Margin="4,0"
+                                                       Text="{Binding Path=FullName}"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource SecondaryFont}" />
+
+                                            <!--Health -->
+                                            <TextBlock Grid.Row="2"
+                                                       Grid.Column="2"
+                                                       Margin="4,0"
+                                                       Text="Health:"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource MainFont}" />
+                                            <TextBlock Grid.Row="2"
+                                                       Grid.Column="3"
+                                                       Margin="4,0"
+                                                       Text="{Binding Path=Health}"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource SecondaryFont}" />
+
+                                            <!--Attack -->
+                                            <TextBlock Grid.Row="3"
+                                                       Grid.Column="2"
+                                                       Margin="4,0"
+                                                       Text="Attack:"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource MainFont}" />
+                                            <TextBlock Grid.Row="3"
+                                                       Grid.Column="3"
+                                                       Margin="4,0"
+                                                       Text="{Binding Path=Attack}"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource SecondaryFont}" />
+
+                                            <!--Defense -->
+                                            <TextBlock Grid.Row="4"
+                                                       Grid.Column="2"
+                                                       Margin="4,0"
+                                                       Text="Defense:"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource MainFont}" />
+                                            <TextBlock Grid.Row="4"
+                                                       Grid.Column="3"
+                                                       Margin="4,0"
+                                                       Text="{Binding Path=Defense}"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource SecondaryFont}" />
+
+                                            <!--Speed -->
+                                            <TextBlock Grid.Row="5"
+                                                       Grid.Column="2"
+                                                       Margin="4,0"
+                                                       Text="Speed:"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource MainFont}" />
+                                            <TextBlock Grid.Row="5"
+                                                       Grid.Column="3"
+                                                       Margin="4,0"
+                                                       Text="{Binding Path=Speed}"
+                                                       Foreground="{StaticResource TextColor}"
+                                                       FontFamily="{StaticResource SecondaryFont}" />
+
+
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </ScrollViewer>
+            </ContentControl>
+        </Grid>
+    </Grid>
+</Window>

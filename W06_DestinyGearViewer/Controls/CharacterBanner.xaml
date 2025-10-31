@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="W06_DestinyGearViewer.Controls.CharacterBanner"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:W06_DestinyGearViewer.Controls"
+             xmlns:dataProviders="clr-namespace:W06_DestinyGearViewer.DataProviders"
+             mc:Ignorable="d" 
+             Height="95">
+    <Grid d:DataContext="{Binding Source={x:Static dataProviders:DesignTimeData.MockCharacter}}">
+        <Image Source="{Binding BackgroundPath, Converter={StaticResource convPathToImage}}" />
+        <Image Source="{Binding EmblemPath, Converter={StaticResource convPathToImage}}"
+               HorizontalAlignment="Left"
+               Margin="0 0 0 15" />
+        <Label Content="{Binding SubClass}"
+               Foreground="LightGray"
+               FontFamily="MS UI Gothic"
+               FontSize="30"
+               FontWeight="Bold"
+               Margin="81,5,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" />
+        <Label Content="Human Female"
+               Foreground="LightGray"
+               FontFamily="MS UI Gothic"
+               FontSize="20"
+               FontWeight="Bold"
+               Margin="81,41,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" />
+        <Label Content="{Binding BaseLevel}"
+               Foreground="LightGray"
+               FontFamily="MS UI Gothic"
+               FontSize="30"
+               FontWeight="Bold"
+               Margin="0,5,5,0"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top" />
+        <Label Content="{Binding LightLevel}"
+               Foreground="Yellow"
+               FontFamily="MS UI Gothic"
+               FontSize="15"
+               Margin="0,35,5,0"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Books>
+  <Book>
+    <Title>1984</Title>
+    <Author>George Orwell</Author>
+    <Year>1949</Year>
+    <Genre>Dystopian</Genre>
+    <Price>9.99</Price>
+    <IsAvailable>true</IsAvailable>
+    <Description>A dystopian novel set in a totalitarian society under constant surveillance.</Description>
+  </Book>
+  <Book>
+    <Title>The Hobbit</Title>
+    <Author>J.R.R. Tolkien</Author>
+    <Year>1937</Year>
+    <Genre>Fantasy</Genre>
+    <Price>12.99</Price>
+    <IsAvailable>true</IsAvailable>
+    <Description>A fantasy adventure about a hobbit's journey to reclaim a lost kingdom.</Description>
+  </Book>
+  <Book>
+    <Title>Pride and Prejudice</Title>
+    <Author>Jane Austen</Author>
+    <Year>1813</Year>
+    <Genre>Romance</Genre>
+    <Price>7.99</Price>
+    <IsAvailable>false</IsAvailable>
+    <Description>A classic romance novel exploring themes of love and social standing.</Description>
+  </Book>
+  <Book>
+    <Title>Dune</Title>
+    <Author>Frank Herbert</Author>
+    <Year>1965</Year>
+    <Genre>Science Fiction</Genre>
+    <Price>14.99</Price>
+    <IsAvailable>true</IsAvailable>
+    <Description>An epic science fiction saga set on the desert planet of Arrakis.</Description>
+  </Book>
+  <Book>
+    <Title>The Great Gatsby</Title>
+    <Author>F. Scott Fitzgerald</Author>
+    <Year>1925</Year>
+    <Genre>Literary Fiction</Genre>
+    <Price>11.99</Price>
+    <IsAvailable>true</IsAvailable>
+    <Description>A novel about the American dream and the excesses of the Jazz Age.</Description>
+  </Book>
+  <Book>
+    <Title>Foundation</Title>
+    <Author>Isaac Asimov</Author>
+    <Year>1951</Year>
+    <Genre>Science Fiction</Genre>
+    <Price>13.99</Price>
+    <IsAvailable>true</IsAvailable>
+    <Description>A science fiction series about the fall and rise of a galactic empire.</Description>
+  </Book>
+  <Book>
+    <Title>The Lord of the Rings</Title>
+    <Author>J.R.R. Tolkien</Author>
+    <Year>1954</Year>
+    <Genre>Fantasy</Genre>
+    <Price>19.99</Price>
+    <IsAvailable>true</IsAvailable>
+    <Description>An epic fantasy tale of the quest to destroy a powerful ring.</Description>
+  </Book>
+  <Book>
+    <Title>Brave New World</Title>
+    <Author>Aldous Huxley</Author>
+    <Year>1932</Year>
+    <Genre>Dystopian</Genre>
+    <Price>10.99</Price>
+    <IsAvailable>false</IsAvailable>
+    <Description>A dystopian novel exploring a future society driven by technology and control.</Description>
+  </Book>
+</Books>

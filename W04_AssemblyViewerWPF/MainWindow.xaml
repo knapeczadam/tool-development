@@ -1,0 +1,14 @@
+﻿<Window x:Class="W04_AssemblyViewerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W04_AssemblyViewerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TreeView x:Name="treeView" Margin="0,78,0,0"/>
+        <Button x:Name="btnSelectAssembly" Content="Select Assembly" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="43" Width="196" Click="BtnSelectAssembly_Click"/>
+
+    </Grid>
+</Window>

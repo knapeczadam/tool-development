@@ -1,0 +1,12 @@
+﻿<Application x:Class="W06_HeroContactList.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:W06_HeroContactList"
+             xmlns:models="clr-namespace:W06_HeroContactList.Models"
+             xmlns:viewModels="clr-namespace:W06_HeroContactList.ViewModels"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources>
+        <models:JsonHeroContactService x:Key="heroContactService"></models:JsonHeroContactService>
+        <viewModels:EditViewModel x:Key="editVM"></viewModels:EditViewModel>
+    </Application.Resources>
+</Application>

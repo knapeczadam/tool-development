@@ -1,0 +1,9 @@
+﻿<Application x:Class="W06_Timer_MVVM_Toolkit_Notify.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:W06_Timer_MVVM_Toolkit_Notify"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

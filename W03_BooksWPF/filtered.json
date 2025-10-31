@@ -1,0 +1,20 @@
+[
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "genre": "Dystopian",
+    "price": 9.99,
+    "is_available": true,
+    "description": "A dystopian novel set in a totalitarian society under constant surveillance."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "genre": "Dystopian",
+    "price": 10.99,
+    "is_available": false,
+    "description": "A dystopian novel exploring a future society driven by technology and control."
+  }
+]

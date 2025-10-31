@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <!-- Green Theme specific colors -->
+    <SolidColorBrush x:Key="WindowBackground" Color="PaleGreen"/>
+    <SolidColorBrush x:Key="Shared.Foreground" Color="Green"></SolidColorBrush>
+    <SolidColorBrush x:Key="Shared.Background" Color="Yellow"></SolidColorBrush>
+    <SolidColorBrush x:Key="Shared.Border" Color="DarkGreen"></SolidColorBrush>
+    <!-- ... -->
+
+    <!-- Shared Controls -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Shared/Controls.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+</ResourceDictionary>

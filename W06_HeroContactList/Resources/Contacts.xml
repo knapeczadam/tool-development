@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Contacts>
+	<Contact id="0" firstname="Clark" lastname="Kent" avatar="ClarkKent.jpg"/>
+	<Contact id="1" firstname="Tony" lastname="Stark" avatar="TonyStark.jpg"/>
+</Contacts>

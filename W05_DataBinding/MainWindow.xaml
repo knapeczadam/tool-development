@@ -1,0 +1,74 @@
+﻿<Window x:Class="W05_DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W05_DataBinding"
+        xmlns:manualBinding="clr-namespace:W05_DataBinding.ManualBinding"
+        xmlns:elementToElement="clr-namespace:W05_DataBinding.ElementToElement"
+        xmlns:propertyToElement="clr-namespace:W05_DataBinding.PropertyToElement"
+        xmlns:extra="clr-namespace:W05_DataBinding.Extra"
+        xmlns:exercise="clr-namespace:W05_DataBinding.Exercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Manual Binding">
+                <TabControl x:Name="tabControl1">
+                    <TabItem Header="Example 1">
+                        <manualBinding:Example1 />
+                    </TabItem>
+                    <TabItem Header="Example 2">
+                        <manualBinding:Example2 />
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="Element to Element">
+                <TabControl x:Name="tabControl2">
+                    <TabItem Header="Default Binding">
+                        <elementToElement:DefaultBinding/>
+                    </TabItem>
+                    <TabItem Header="Binding Override">
+                        <elementToElement:BindingOverride />
+                    </TabItem>
+                    <TabItem Header="Binding Mode">
+                        <elementToElement:BindingMode />
+                    </TabItem>
+                    <TabItem Header="Multiple Bindings">
+                        <elementToElement:MultipleBindings />
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="Property To Element">
+                <TabControl x:Name="tabControl3">
+                    <TabItem Header="Custom Property">
+                        <propertyToElement:CustomProperty/>
+                    </TabItem>
+                    <TabItem Header="Data Context">
+                        <propertyToElement:DataContextBinding/>
+                    </TabItem>
+                    <TabItem Header="Observable Collection">
+                        <propertyToElement:ObservableCollectionBinding/>
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="Converters">
+                <TabControl x:Name="tabControl4">
+                    <TabItem Header="Value Converter">
+                        <extra:ValueConverter />
+                    </TabItem>
+                    <TabItem Header="Multi Converter Color">
+                        <extra:MultiBindingColor />
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="Exercise">
+                <TabControl x:Name="tabControl5">
+                    <TabItem Header="Should not be empty">
+                        <exercise:Exercise />
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

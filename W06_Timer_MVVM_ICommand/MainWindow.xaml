@@ -1,0 +1,18 @@
+﻿<Window x:Class="W06_Timer_MVVM_ICommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W06_Timer_MVVM_ICommand"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Label x:Name="lblCounter" Content="{Binding Counter}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="273" Width="532" Margin="0,48,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="72" ContentStringFormat="N1"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="68,357,0,0" VerticalAlignment="Top" Height="45" Width="133" Background="#FF12B5A1" Command="{Binding StartTimerCommand, Mode=OneWay}"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="553,357,0,0" VerticalAlignment="Top" Height="43" Width="139" Background="#FFBF7575" Command="{Binding StopTimerCommand, Mode=OneWay}"/>
+
+    </Grid>
+</Window>

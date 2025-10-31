@@ -1,0 +1,18 @@
+﻿<Window x:Class="W06_Timer_MVVM_Toolkit_Notify.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W06_Timer_MVVM_Toolkit_Notify"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <Grid Background="#FF75EDDE">
+        <Label x:Name="lblCounter" Content="{Binding Counter}" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" Height="241" Width="342" FontSize="72" FontWeight="Bold" FontFamily="Snap ITC" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ContentStringFormat="N1"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="28,354,0,0" VerticalAlignment="Top" Height="58" Width="476" Background="#FF9CDF91" FontSize="24" FontStyle="Italic" FontFamily="Algerian" Command="{Binding StartTimerCommand, Mode=OneWay}"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="571,234,0,0" VerticalAlignment="Top" Height="178" Width="212" Background="#FFD69D9D" FontSize="48" FontWeight="Bold" FontFamily="Curlz MT" Command="{Binding StopTimerCommand, Mode=OneWay}"/>
+
+    </Grid>
+</Window>

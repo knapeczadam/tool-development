@@ -1,0 +1,9 @@
+﻿<Application x:Class="W07_HearthstoneCards_Async.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:W07_HearthstoneCards_Async"
+             StartupUri="/View/MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

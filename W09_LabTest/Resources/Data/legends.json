@@ -1,0 +1,698 @@
+[
+  {
+    "id": "53d9995b-4178-4136-8feb-49a708ac40ea",
+    "name": "Ash",
+    "full_name": "Dr. Ashleigh Reid",
+    "description": "Born in the unforgiving Frontier, Dr. Ashleigh Reid - still very much a human - learned early that the only person who was going to look out for her was herself. One day, she was hired by a mercenary group for a delicate job: steal an experimental fuel source being researched in the Outlands city of Olympus. It was the perfect job for Reid, who infiltrated and psychologically manipulated the researchers for years. When the lab self-destructed, she died.",
+    "quote": "&quot;See your imperfections in your enemies — then crush them.&quot;",
+    "role": "Incisive Instigator",
+    "class": "Assault",
+    "age": "122",
+    "home_world": "Unknown",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Phase Breach"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Arc Snare"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Marked For Death"
+      }
+    ],
+    "health": 120,
+    "attack": 90,
+    "defense": 70,
+    "speed": 100
+  },
+  {
+    "id": "d48a13ac-2df5-484c-94a9-72cbc0b6ff8c",
+    "name": "Ballistic",
+    "full_name": "August Montgomery Brinkman",
+    "description": "August was the sole heir to the Brinkman fortune, built on shady backroom deals. But when those deals caught up with his parents, August was left a billionaire orphan. Wealthy, furious and self-destructive, August joined the Thunderdome Games (the pre-Apex Apex Games). Here, he took the name Ballistic and became a sensation! His style was wild, reckless, and utterly selfish⁠, helping him become the very first Thunderdome celebrity.",
+    "quote": "A refined older gentleman living with a beast inside.",
+    "role": "Refined Gunslinger",
+    "class": "Assault",
+    "age": "63",
+    "home_world": "Gaea",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Tempest"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Whistler"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Sling"
+      }
+    ],
+    "health": 170,
+    "attack": 60,
+    "defense": 60,
+    "speed": 90
+  },
+  {
+    "id": "aae71015-77c8-4f52-8d5e-aea63409edd6",
+    "name": "Bangalore",
+    "full_name": "Anita Williams",
+    "description": "Born into a military family where she, her parents, and her four older brothers all served with the IMC, Bangalore has been an exceptional soldier her whole life. Dedicated to the IMC cause, she was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded.\r\n\r\nWhen the Frontier Militia attacked the IMC on Gridiron, escape was nearly impossible. Using an experimental device to power their jump-drive, the IMS Hestia managed to narrowly escape the Battle at Gridiron only to crash on the planet Gaea. The surviving crew, including Anita and her brother Jackson, built a settlement on the islands of New Antilla. Shortly after, Anita and Jackson left to begin their quest back home– or so she thought.",
+    "quote": "&quot;Name the weapon--I'll still beat you.&quot;",
+    "role": "Professional Soldier",
+    "class": "Assault",
+    "age": "40",
+    "home_world": "Gridiron",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Rolling Thunder"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Smoke Launcher"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Double Time"
+      }
+    ],
+    "health": 190,
+    "attack": 70,
+    "defense": 70,
+    "speed": 50
+  },
+  {
+    "id": "dbad8ded-0b12-4fe4-a5a2-2d6c9c293e52",
+    "name": "Bloodhound",
+    "full_name": "Blódhundr",
+    "description": "Bloodhound is known across the Outlands as one of the greatest game hunters the Frontier has ever seen. The child of two engineers stationed at the New Dawn industrial plant on Talos, Bloodhound was taken in by their uncle Artur after a meltdown destroyed the facility and killed both their parents. Artur taught them the Old Ways, a belief system that focuses on the glory of nature and rejects modern technology. Yet Bloodhound was constantly drawn to technological marvels, and ultimately used both new and old methods to take down a Goliath that preyed on the people of their village, forever changing their life’s path.",
+    "quote": "&quot;I am the hunter the Gods have sent.&quot;",
+    "role": "Technological Tracker",
+    "class": "Recon",
+    "age": "40",
+    "home_world": "Talos",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Beast of the Hunt"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Eye of the Allfather"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Tracker"
+      }
+    ],
+    "health": 180,
+    "attack": 90,
+    "defense": 90,
+    "speed": 20
+  },
+  {
+    "id": "0661c76b-21ae-4108-9bd4-64562efd697e",
+    "name": "Caustic",
+    "full_name": "Alexander Nox",
+    "description": "Alexander Nox used to be one of the brightest scientists in the employ of Humbert Labs, the Frontier’s leading manufacturer of pesticide gases. Nox worked day and night developing new formulas for the glut of pesticides needed to protect the crops that sustained the Outlands. But he soon realized that progress was being hampered by his testing methods. He needed to test on more than just inert tissue: he needed living subjects.",
+    "quote": "&quot;I don't concern myself with the ambitions of insects.&quot;",
+    "role": "Toxic Trapper",
+    "class": "Controller",
+    "age": "50",
+    "home_world": "Gaea",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Nox Gas Grenade"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Nox Gas Trap"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Nox Vision"
+      }
+    ],
+    "health": 150,
+    "attack": 80,
+    "defense": 80,
+    "speed": 70
+  },
+  {
+    "id": "08b58e71-802a-45f6-8b26-c9bad2680110",
+    "name": "Conduit",
+    "full_name": "Rowenna Valentina Coffey Divina",
+    "description": "On her rebuilt homeworld of Nexus, Rowenna Valentina Coffey Divina chose joy, her ever-present smile offering hope amidst the rubble of a government coup. There, the remnants of a fallen Monarch Titan became a symbol of sacrifice, inspiring heroic tales of Legends that Rowenna spun for her siblings. Her sense of humor would be her family’s shield against the harshness of reality, and a secret weapon in Rowenna’s own quest to be an Apex Legend.",
+    "quote": "&quot;Time to rise and shine, mga kapatid!&quot;",
+    "role": "Shield Healer",
+    "class": "Support",
+    "age": "27",
+    "home_world": "Nexus",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Energy Barricade"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Radiant Transfer"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Savior's Speed"
+      }
+    ],
+    "health": 140,
+    "attack": 70,
+    "defense": 60,
+    "speed": 110
+  },
+  {
+    "id": "c91b05eb-14e2-4921-a6b8-38ccb558f92a",
+    "name": "Crypto",
+    "full_name": "Tae Joon Park",
+    "description": "Crypto specializes in secrets. A brilliant hacker and encryption expert, he uses aerial drones to spy on his opponents in the Apex Arena without being seen. He also has a secret of his own: his name is Tae Joon Park, and he joined the Apex Games to find the people who framed him for murder.",
+    "quote": "&quot;It’s hard to be scared when you’re prepared.&quot;",
+    "role": "Surveillance Expert",
+    "class": "Recon",
+    "age": "24",
+    "home_world": "Gaea",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Drone EMP"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Surveillance Drone"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Neurolink"
+      }
+    ],
+    "health": 180,
+    "attack": 70,
+    "defense": 80,
+    "speed": 50
+  },
+  {
+    "id": "87b291d3-8431-4890-8f29-77b2c83e7116",
+    "name": "Fuse",
+    "full_name": "Walter Fitzroy Jr.",
+    "description": "Ladies’ man, man’s man, and all-round manly man, Fuse is a one man wrecking crew... and he knows it. Fuse exudes joy; he’s a laid-back explosives enthusiast who’s damn near covered in things that go BOOM. Fuse doesn’t lack confidence, but he often lacks a plan. He’s a blow-up-first ask-questions-later kinda guy, who’s always looking for a good scrap.",
+    "quote": "&quot;If there’s dirty deeds to do, I’ll do ‘em dirt cheap.&quot;",
+    "role": "Bombastic Explosives Expert",
+    "class": "Assault",
+    "age": "55",
+    "home_world": "Salvo",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "The Motherlode"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Knuckle Cluster"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Grenadier"
+      }
+    ],
+    "health": 170,
+    "attack": 50,
+    "defense": 60,
+    "speed": 100
+  },
+  {
+    "id": "80a799b9-0aaa-43c8-a232-8ceb94ecc64d",
+    "name": "Gibraltar",
+    "full_name": "Makoa Gibraltar",
+    "description": "Gibraltar is a gentle giant with a wild side. The son of two SARAS (Search and Rescue Association of Solace) volunteers, he has always been skilled at getting others out of dangerous situations that are common in the Outlands. However, he only began to understand the value of protecting others when he and his boyfriend stole his father’s motorcycle, took it on a joyride, and got trapped by a deadly mudslide. His parents saved them, and his father lost an arm in the process. Gibraltar has never forgotten that sacrifice and has devoted his life to helping those in need.",
+    "quote": "&quot;Try to move me; it&#39;ll be fun.&quot;",
+    "role": "Shielded Fortress",
+    "class": "Support",
+    "age": "32",
+    "home_world": "Solace",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Defensive Bombardment"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Dome of Protection"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Gun Shield"
+      }
+    ],
+    "health": 140,
+    "attack": 70,
+    "defense": 60,
+    "speed": 110
+  },
+  {
+    "id": "b7707339-9690-4403-9ee5-c2ba4eaa8076",
+    "name": "Horizon",
+    "full_name": "Dr. Mary Somers",
+    "description": "Almost a century ago, the Outlands were dangling on the edge of a cataclysmic energy crisis. Dr. Mary Somers, a charmingly eccentric astrophysicist, was hired to find a solution. Mary moved her family to the scientific research station on Olympus and set to work.",
+    "quote": "&quot;Let’s have a wee play with the laws of physics, shall we?&quot;",
+    "role": "Gravitational Manipulator",
+    "class": "Skirmisher",
+    "age": "39 (Give or take an extra 87years…)",
+    "home_world": "Solace",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Black Hole"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Gravity Lift"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Spacewalk"
+      }
+    ],
+    "health": 130,
+    "attack": 50,
+    "defense": 70,
+    "speed": 130
+  },
+  {
+    "id": "7b5c5fcf-76b0-4835-a5e5-39b9a8a60f7f",
+    "name": "Lifeline",
+    "full_name": "Ajay Che",
+    "description": "Ajay Che, aka Lifeline, isn’t someone you would expect to find in the Apex Games. The child of wealthy war profiteers, she left home when she learned of the damage her family had caused and enlisted in the Frontier Corps, a humanitarian organization that aids Frontier communities in need. She’s since devoted her life to helping others and joined the Apex Games to give more funds to those in need.\r\n\r\nSince no one in the Games is innocent — they all know what they signed up for — and every one of her victories means help for those in need, Lifeline has no problem engaging in the popular bloodsport. Or so she tells herself. She may seem sarcastic and callous, but deep down she wants to help people and make the world a better place. If that means taking a few people down in the process, so be it.",
+    "quote": "&quot;Never quit. That's how you win.&quot;",
+    "role": "Combat Medic",
+    "class": "Support",
+    "age": "26",
+    "home_world": "Psamathe",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Care Package"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "D.O.C. Heal Drone"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Combat Medic"
+      }
+    ],
+    "health": 120,
+    "attack": 90,
+    "defense": 50,
+    "speed": 120
+  },
+  {
+    "id": "8c549ded-8f9f-4736-9a9b-6b2a721ac254",
+    "name": "Loba",
+    "full_name": "Loba Andrade",
+    "description": "When Loba was nine, she looked on as simulacrum hitman Revenant killed her family. Left with nothing, Loba survived by picking pockets. As her skills improved, Loba used every tool at her disposal to lift herself from the gutter. Everything changed when she broke into a supposedly impenetrable facility and got her hands on the Jump Drive tech stored inside. With her new teleportation bracelet, the most secure and unattainable items were within her reach. So was her dream of living the high life.",
+    "quote": "&quot;There's a certain elegance to combat. I'll show you.&quot;",
+    "role": "Translocating Thief",
+    "class": "Support",
+    "age": "36",
+    "home_world": "None",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Black Market Boutique"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Burglar’s Best Friend"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Eye for Quality"
+      }
+    ],
+    "health": 180,
+    "attack": 80,
+    "defense": 80,
+    "speed": 40
+  },
+  {
+    "id": "60189103-c857-40b2-a97b-362e7295e7e1",
+    "name": "Mad Maggie",
+    "full_name": "Margaret Kōhere",
+    "description": "Margaret Kōhere - the woman who would one day be known as Mad Maggie - grew up in one of the dustiest, dullest corners of Salvo without any family to speak of. She was fortunate, then, to meet a kindred chaotic spirit: an adventurous young boy named Walter Fitzroy. The two were inseparable, and in their teenage years, they became mercenaries. Eventually this duo grew into the Cracked Talon - a powerful mercenary operation. It was here she earned her nom de guerre: Mad Maggie. But when rival warlord Sandringham Kelly signed a treaty with the Syndicate, Maggie’s hopes for an independent Salvo were ruined, and Fuse abandoned her for the Games, leaving Maggie very mad indeed…",
+    "quote": "&quot;I'm gonna make this world bleed.&quot;",
+    "role": "Rebel Warlord",
+    "class": "Assault",
+    "age": "56",
+    "home_world": "Salvo",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "WRECKING BALL"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "RIOT DRILL"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "WARLORD’S IRE"
+      }
+    ],
+    "health": 100,
+    "attack": 80,
+    "defense": 90,
+    "speed": 110
+  },
+  {
+    "id": "bc9d7620-116b-47ce-87b3-43be65d0bfd0",
+    "name": "Mirage",
+    "full_name": "Elliott Witt",
+    "description": "Mirage is the kind of guy who likes to stand out. The youngest of four brothers, he perfected the art of fooling around to get attention. The one thing he took seriously was Holo-Pilot technology: introduced to the illusion-creating tech by his engineer mother, he poured over the mechanisms and learned all he could about them. Even when his brothers went MIA during the Outlands’ Civil War, Mirage and his mother continued to develop holo devices, and the work brought them closer.",
+    "quote": "&quot;I don't take myself too seriously. I don't take myself anywhere. I need to get out more.&quot;",
+    "role": "Holographic Trickster",
+    "class": "Support",
+    "age": "32",
+    "home_world": "Solace",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Life of the Party"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Psyche Out"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Now You See Me . . ."
+      }
+    ],
+    "health": 170,
+    "attack": 50,
+    "defense": 70,
+    "speed": 90
+  },
+  {
+    "id": "45ffdf44-7ba6-439e-ba38-1931fd78bd8f",
+    "name": "Newcastle",
+    "full_name": "Jackson Williams",
+    "description": "Lamont Craig wasn’t like other dads in the neighborhood. Sure, he dropped the kids off at school and acted out multiple voices every night for Story Time with his toddler. But Lamont had secrets—the first being his real name, Jackson Williams.\r\n\r\nA top soldier for the IMC, Jackson went AWOL when he ignored direct orders to fight what he believed was a losing battle. He knew he would never be safe from the remnants of the IMC--and neither would his sister, Anita, as long as she was with him. So when he was presumed dead in a ship explosion, he used that opportunity to leave his life behind, even if it meant leaving her behind too.",
+    "quote": "&quot;Get behind me and you're untouchable, slick.&quot;",
+    "role": "Heroic Defender",
+    "class": "Support",
+    "age": "41",
+    "home_world": "Gridiron",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Castle Wall"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Mobile Shield"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Retrieve the Wounded"
+      }
+    ],
+    "health": 170,
+    "attack": 70,
+    "defense": 90,
+    "speed": 50
+  },
+  {
+    "id": "ab23c01e-f9e5-4b47-b2ad-4f912f989835",
+    "name": "Octane",
+    "full_name": "Octavio Silva",
+    "description": "One day, Octavio Silva was bored. In fact, he was bored most days. Son of the preoccupied CEO of Silva Pharmaceuticals and wanting for nothing in life, he entertained himself by performing death-defying stunts and posting holovids of them for his fans to gawk over. He decided to set the course record for a nearby Gauntlet by launching himself across the finish line – using a grenade.",
+    "quote": "&quot;Whoa . . . what a rush!&quot;",
+    "role": "High-Speed Daredevil",
+    "class": "Skirmisher",
+    "age": "26",
+    "home_world": "Psamathe",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Launch Pad"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Stim"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Swift Mend"
+      }
+    ],
+    "health": 170,
+    "attack": 80,
+    "defense": 90,
+    "speed": 40
+  },
+  {
+    "id": "dfe194c6-e26f-48aa-830d-c540d46868bf",
+    "name": "Pathfinder",
+    "full_name": "Pathfinder",
+    "description": "Pathfinder is the picture of optimism, despite his circumstances. A MRVN (Mobile Robotic Versatile eNtity) with a talent for location scouting and surveying, he booted up decades ago in an abandoned warehouse with no idea who created him or why. With only his MRVN designation to hint at his identity, Pathfinder eventually set off in search of his creator. Thanks to the help of the Legends, he learned he was built by the Outlands’ greatest scientists to help solve the Outlands’ energy crisis.",
+    "quote": "&quot;Losing isn't fun. That's why I don't do it.&quot;",
+    "role": "Forward Scout",
+    "class": "Skirmisher",
+    "age": "77",
+    "home_world": "Psamathe",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Zipline Gun"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Grappling Hook"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Insider Knowledge"
+      }
+    ],
+    "health": 160,
+    "attack": 90,
+    "defense": 80,
+    "speed": 50
+  },
+  {
+    "id": "95c1f770-9609-4e3f-9679-450dba02142d",
+    "name": "Rampart",
+    "full_name": "Ramya Parekh",
+    "description": "Rampart is a blue-collar, private business owner who just needs a big gun and a backpack full of scrap metal to get by in the dangerous, wild west world of the Outlands. Before opening her popular modding shop on Gaea, Ramya Parekh (Rampart for short) made a name for herself in the underground gauntlet circuit. Parekh climbed to the top showcasing pure skill using her custom-modded gear. She began taking jobs from smugglers, Syndicate members, and everyone in between. Some say it ain’t great unless it’s got &quot;Rampart&quot; written on it.",
+    "quote": "&quot;If I ever let you down, it’s probably because I grew a bit tired of carrying you.&quot;",
+    "role": "Amped Modder",
+    "class": "Controller",
+    "age": "23",
+    "home_world": "Gaea",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Emplaced Minigun &quot;Sheila&quot;"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Amped Cover"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Modded Loader"
+      }
+    ],
+    "health": 120,
+    "attack": 90,
+    "defense": 80,
+    "speed": 90
+  },
+  {
+    "id": "bf1c226d-df1d-490b-a42e-8c0129eb0c3b",
+    "name": "Revenant",
+    "full_name": "Kaleb Cross",
+    "description": "Revenant used to be human. He used to be the greatest hitman the Mercenary Syndicate ever had. He used to look in the mirror and see his human face looking back. But time changes everything, and when his programming finally failed, he saw what he had become at the hands of the Mercenary Syndicate and Hammond Robotics: a walking nightmare of steel and vestigial flesh. His masters resurrected him as a simulacrum, snatching him from death’s embrace again and again and programming him to forget.",
+    "quote": "&quot;I’ve seen the other side, Skinbag. There is nothing. You are nothing.&quot;",
+    "role": "Synthetic Nightmare",
+    "class": "Skirmisher",
+    "age": "359",
+    "home_world": "Unknown",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Forged Shadows"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Shadow Pounce"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Assassin’s Instinct"
+      }
+    ],
+    "health": 180,
+    "attack": 70,
+    "defense": 90,
+    "speed": 40
+  },
+  {
+    "id": "33bd28b1-ef29-4962-92d6-1e6eba8f8986",
+    "name": "Seer",
+    "full_name": "Obi Edolasim",
+    "description": "Before his birth, it was foretold that Seer would bring pain and suffering to the world--and the night he was born, a meteor barreled across the sky and struck his world’s moon. It was considered a bad omen, and when the pale blue eyes of Obi Edolasim opened, his community saw a cursed child. His parents did not; they loved him unconditionally because they saw the true empathic, creative soul of their son. They even supported him when he was drawn to the theatricality of the Arenas, where he could express himself fully.",
+    "quote": "&quot;If they stare, give them something to see.&quot;",
+    "role": "Ambush Artist",
+    "class": "Recon",
+    "age": "27",
+    "home_world": "Boreas",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Exhibit"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Focus of Attention"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Heart Seeker"
+      }
+    ],
+    "health": 150,
+    "attack": 60,
+    "defense": 70,
+    "speed": 100
+  },
+  {
+    "id": "57452c64-3a16-4150-a67b-b64c6147d44f",
+    "name": "Valkyrie",
+    "full_name": "Kairi Imahara",
+    "description": "Bold, brash, fiery and fierce, Kairi Imahara isn’t above greasing palms and bending the law. When she was a child, she stole a Titan. It belonged to her dad: callsign Viper. She wanted to be just like him when she grew up. But the next day he left on a mission and never returned. In some ways, she still followed in his footsteps: it wasn't a Titan, but her ship offered a decent living. Her personal life, however, was anything but. During the day, she smuggled precious cargo, and at night, went shot for shot with the outlaws and mercs in the bars. But even though she had her ladies, her liquor, and her love of the sky, she was still obsessed with finding the man who’d put her father in harm’s way: his commander, Kuben Blisk.",
+    "quote": "&quot;The skies belong to me now.&quot;",
+    "role": "Winged Avenger",
+    "class": "Skirmisher",
+    "age": "31",
+    "home_world": "Angelia",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Skyward Dive"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Missile Swarm"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "VTOL Jets"
+      }
+    ],
+    "health": 120,
+    "attack": 80,
+    "defense": 70,
+    "speed": 110
+  },
+  {
+    "id": "56f5dc2c-a4f3-4946-87dc-174816395981",
+    "name": "Vantage",
+    "full_name": "Xiomara &quot;Mara&quot; Contreras",
+    "description": "Xiomara &quot;Mara&quot; Contreras was born and raised alone on the wild ice planet Págos by her survivalist mother, Xenia. Mara proved gifted with a sniper rifle from the moment she was big enough to look through the scope and reach the trigger at the same time. The tight-lipped Xenia could only get her chatty daughter to stop asking questions by giving her a scavenged copy of Encyclopedia Outlandica, which Mara memorized front to back.\r\n\r\nWhen Mara was 18, she discovered the wreck of the G.D.S. Vantage. Against her mother’s wishes, Mara snuck in, only to learn that she had been lied to. Her mother hadn’t grown up on Págos: she was brought there on the G.D.S. Vantage as a prisoner. Disturbed by the intrusion, the ship collapsed into a crevasse, trapping a wounded Mara. Her mother only found her after a baby bat Mara had rescued circled the crevasse holding Mara’s signature whistle. By the time Xenia got to her daughter, the injuries were too severe for her to treat.To save her daughter’s life, Xenia set off the prison ship’s SOS beacon, but was imprisoned once more in return.",
+    "quote": "&quot;I've been shooting since I was a baby. I was a very dangerous baby.&quot;",
+    "role": "Sniper Savant",
+    "class": "Recon",
+    "age": "19",
+    "home_world": "Págos",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Sniper's Mark"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Echo Relocation"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Spotter's Lens"
+      }
+    ],
+    "health": 100,
+    "attack": 80,
+    "defense": 50,
+    "speed": 150
+  },
+  {
+    "id": "86295e1f-e496-487a-b882-0eea73281806",
+    "name": "Wattson",
+    "full_name": "Natalie Paquette",
+    "description": "Natalie &quot;Wattson&quot; Paquette is a familiar face in the Apex Games, though for a different reason than most. Daughter of the Games’ lead electrical engineer, she studied his manuals to stay close to him, and discovered her calling at a young age. Though she could be completely distracted one moment and hyper-focused the next, electricity grounded her – its ordered, predictable flow made sense in a way the rest of the world didn’t.",
+    "quote": "&quot;Power is everything. You only think you have it.&quot;",
+    "role": "Static Defender",
+    "class": "Controller",
+    "age": "24",
+    "home_world": "Solace",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Interception Pylon"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Perimeter Security"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Spark of Genius"
+      }
+    ],
+    "health": 180,
+    "attack": 90,
+    "defense": 90,
+    "speed": 20
+  },
+  {
+    "id": "ff808afd-65a0-40f1-978f-575bfdeefcc2",
+    "name": "Wraith",
+    "full_name": "Renee Hope Blasey",
+    "description": "Wraith is a whirlwind fighter, able to execute deadly attacks and manipulate spacetime by opening rifts in the fabric of reality — but those abilities came at a price. Years ago, she woke up in an IMC detention facility with no memory of who she was. Senior Science Pilot Renee Blasey, who volunteered as guinea pig for her own experiments... whose partner betrayed her and locked her away… no longer existed. All that was left was a timid girl, frightened by a cacophony of voices in her head, until another version of herself appeared and taught her to listen to the voices. Following her lead, Wraith found the strength to break free from her prison and escape into a different reality - this reality.",
+    "quote": "&quot;There’s a thin line between life and death. You’ll find me there.&quot;",
+    "role": "Interdimensional Skirmisher",
+    "class": "Skirmisher",
+    "age": "34",
+    "home_world": "Typhon",
+    "abilities": [
+      {
+        "ability_type": "Ultimate",
+        "ability_name": "Dimensional Rift"
+      },
+      {
+        "ability_type": "Tactical",
+        "ability_name": "Into the Void"
+      },
+      {
+        "ability_type": "Passive",
+        "ability_name": "Voices from the Void"
+      }
+    ],
+    "health": 160,
+    "attack": 60,
+    "defense": 80,
+    "speed": 80
+  }
+]

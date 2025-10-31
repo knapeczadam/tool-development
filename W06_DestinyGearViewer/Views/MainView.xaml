@@ -1,0 +1,99 @@
+﻿<Window x:Class="W06_DestinyGearViewer.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W06_DestinyGearViewer.Views"
+        xmlns:models="clr-namespace:W06_DestinyGearViewer.Models"
+        xmlns:controls="clr-namespace:W06_DestinyGearViewer.Controls"
+        xmlns:viewModels="clr-namespace:W06_DestinyGearViewer.ViewModels"
+        xmlns:visualBasic="clr-namespace:Microsoft.VisualBasic;assembly=Microsoft.VisualBasic.Core"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d"
+        Title="Destiny Gear Viewer"
+        Background="#FF12171C"
+        Height="780"
+        Width="740">
+
+    <Window.DataContext>
+        <viewModels:MainViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate x:Key="characterBannerTemplate"
+                      DataType="{x:Type models:DestinyCharacter}">
+
+        </DataTemplate>
+    </Window.Resources>
+
+    <Viewbox Stretch="Uniform">
+    <Grid Background="#FF12171C">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- HEADER -->
+            <Grid>
+                <Grid Background="#FF3C546C">
+
+                    <Image Source="{Binding PlayerData.IconPath, Converter={StaticResource convPathToImage}}"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Width="64"
+                           Height="64"
+                           Margin="40 0 0 0" />
+
+                    <TextBox Text="{Binding PlayerName}"
+                             Foreground="LightGray"
+                             Background="{x:Null}"
+                             BorderBrush="{x:Null}"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             VerticalContentAlignment="Center"
+                             Width="250"
+                             Height="64"
+                             Margin="120, 0, 0, 0"
+                             FontFamily="MS UI Gothic"
+                             FontSize="35"
+                             FontWeight="Bold">
+                        <b:Interaction.Triggers>
+                            <b:EventTrigger EventName="LostFocus">
+                                <b:InvokeCommandAction Command="{Binding LoadPlayerCommand}"
+                                                       CommandParameter="{Binding PlayerName}" />
+                            </b:EventTrigger>
+                        </b:Interaction.Triggers>
+                    </TextBox>
+
+                    <ComboBox ItemsSource="{Binding PlayerData.Characters}"
+                              SelectedItem="{Binding SelectedCharacter}"
+                              HorizontalAlignment="Right"
+                              VerticalAlignment="Center"
+                              Height="64"
+                              Width="280"
+                              Margin="0,0,40,0">
+
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <!--<Label Content="{Binding SubClass}" FontSize="35" />-->
+                                <Viewbox>
+                                    <controls:CharacterBanner />
+                                </Viewbox>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                </Grid>
+
+            </Grid>
+
+            <!-- CHARACTER VIEW -->
+            <Grid Grid.Row="1"
+                  Margin="10,30,10,10">
+                <Viewbox Stretch="Uniform">
+                    <local:CharacterView CharacterSource="{Binding SelectedCharacter}" />
+                </Viewbox>
+            </Grid>
+
+    </Grid>
+    </Viewbox>
+</Window>

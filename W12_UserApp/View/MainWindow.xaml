@@ -1,0 +1,111 @@
+﻿<Window x:Class="W12_UserApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W12_UserApp"
+        xmlns:viewModel="clr-namespace:W12_UserApp.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!-- Data context -->
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+    <!-- Input binding -->
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding UndoCommand}" Key="Z" Modifiers="Control"/>
+        <KeyBinding Command="{Binding RedoCommand}" Key="Y" Modifiers="Control"/>
+    </Window.InputBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Load" Command="{Binding LoadUsersCommand}"/>
+                <MenuItem Header="_Save" Command="{Binding SaveUsersCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!-- First name -->
+            <Label Grid.Column="0"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"
+                   x:Name="LabelFirstName"
+                   Foreground="{Binding NewUser.FirstName, Converter={StaticResource AlphaToBrushConverter}}"
+                   Content="First name"/>
+            <TextBox Grid.Column="1"
+                     Text="{Binding NewUser.FirstName, UpdateSourceTrigger=PropertyChanged}"
+                     x:Name="TextBoxFirstName"/>
+
+            <!-- Last name -->
+            <Label Grid.Column="2"
+                   Content="Last Name"
+                   x:Name="LabelLastName"
+                   HorizontalContentAlignment="Center"
+                   Foreground="{Binding NewUser.LastName, Converter={StaticResource AlphaToBrushConverter}}"
+                   VerticalContentAlignment="Center"/>
+            <TextBox Grid.Column="3"
+                     Text="{Binding NewUser.LastName, UpdateSourceTrigger=PropertyChanged}"
+                     x:Name="TextBoxLastName"/>
+            <Button Grid.Column="4"
+                    Content="Add"
+                    Style="{StaticResource MyButtonStyle }"
+                    Command="{Binding AddUserCommand}"
+                    CommandParameter="{Binding NewUser}"
+                    />
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Redo" Command="{Binding RedoCommand}"/>
+                <Button Grid.Column="1" Content="Undo" Command="{Binding UndoCommand}"/>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="First Name"/>
+            <TextBlock Grid.Column="1" Text="Last Name"/>
+        </Grid>
+
+        <ListView Grid.Row="4" ItemsSource="{Binding Users}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding FirstName}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding LastName}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+  </ItemGroup>
+
+<ItemGroup>
+    <Resource Include="Resources\Amped_Cover.png" />
+    <Resource Include="Resources\Arc_Snare.png" />
+    <Resource Include="Resources\Assassins_Instinct.png" />
+    <Resource Include="Resources\Barricade.png" />
+    <Resource Include="Resources\Beast_of_the_Hunt.png" />
+    <Resource Include="Resources\Black_Hole.png" />
+    <Resource Include="Resources\Black_Market_Boutique.png" />
+    <Resource Include="Resources\Burglars_Best_Friend.png" />
+    <Resource Include="Resources\Care_Package.png" />
+    <Resource Include="Resources\Castle_Wall.png" />
+    <Resource Include="Resources\Combat_Revive.png" />
+    <Resource Include="Resources\Dark_Veil.png" />
+    <Resource Include="Resources\Death_Totem.png" />
+    <Resource Include="Resources\Defensive_Bombardment.png" />
+    <Resource Include="Resources\Dimensional_Rift.png" />
+    <Resource Include="Resources\DOC_Heal_Drone.png" />
+    <Resource Include="Resources\Dome_of_Protection.png" />
+    <Resource Include="Resources\Double_Time.png" />
+    <Resource Include="Resources\Drone_EMP.png" />
+    <Resource Include="Resources\Echo_Relocation.png" />
+    <Resource Include="Resources\Energy_Barricade.png" />
+    <Resource Include="Resources\Exhibit.png" />
+    <Resource Include="Resources\Eye_for_Quality.png" />
+    <Resource Include="Resources\Eye_of_the_Allfather.png" />
+    <Resource Include="Resources\Flashback.png" />
+    <Resource Include="Resources\Focus_of_Attention.png" />
+    <Resource Include="Resources\Forged_Shadows.png" />
+    <Resource Include="Resources\Fortified.png" />
+    <Resource Include="Resources\Gifted_Ear.png" />
+    <Resource Include="Resources\Grappling_Hook.png" />
+    <Resource Include="Resources\Gravity_Lift.png" />
+    <Resource Include="Resources\Grenadier.png" />
+    <Resource Include="Resources\Gun_Shield.png" />
+    <Resource Include="Resources\Heart_Seeker.png" />
+    <Resource Include="Resources\Hype_Anthem.png" />
+    <Resource Include="Resources\Insider_Knowledge.png" />
+    <Resource Include="Resources\Interception_Pylon.png" />
+    <Resource Include="Resources\Into_the_Void.png" />
+    <Resource Include="Resources\Knuckle_Cluster.png" />
+    <Resource Include="Resources\Launch_Pad.png" />
+    <Resource Include="Resources\Life_of_the_Party.png" />
+    <Resource Include="Resources\Loot_Spawner.png" />
+    <Resource Include="Resources\Low_Profile.png" />
+    <Resource Include="Resources\Marked_for_Death.png" />
+    <Resource Include="Resources\Missile_Swarm.png" />
+    <Resource Include="Resources\Mobile_Minigun_-Sheila-.png" />
+    <Resource Include="Resources\Mobile_Shield.png" />
+    <Resource Include="Resources\Modded_Loader.png" />
+    <Resource Include="Resources\Neurolink.png" />
+    <Resource Include="Resources\Now_You_See_Me.png" />
+    <Resource Include="Resources\Nox_Gas_Grenade.png" />
+    <Resource Include="Resources\Nox_Gas_Trap.png" />
+    <Resource Include="Resources\Nox_Vision.png" />
+    <Resource Include="Resources\Panic_Button.png" />
+    <Resource Include="Resources\Perimeter_Security.png" />
+    <Resource Include="Resources\Phase_Breach.png" />
+    <Resource Include="Resources\Phase_Chamber.png" />
+    <Resource Include="Resources\Piercing_Spikes.png" />
+    <Resource Include="Resources\Psyche_Out.png" />
+    <Resource Include="Resources\Radiant_Transfer.png" />
+    <Resource Include="Resources\Reduced_Tactical_Recharge.png" />
+    <Resource Include="Resources\Reduced_Ultimate_Recharge.png" />
+    <Resource Include="Resources\Retrieve_the_Wounded.png" />
+    <Resource Include="Resources\Riot_Drill.png" />
+    <Resource Include="Resources\Rolling_Thunder.png" />
+    <Resource Include="Resources\Rowdys_Rave.png" />
+    <Resource Include="Resources\Saviors_Speed.png" />
+    <Resource Include="Resources\Shadow_Pounce.png" />
+    <Resource Include="Resources\Silence.png" />
+    <Resource Include="Resources\Skyward_Dive.png" />
+    <Resource Include="Resources\Sling.png" />
+    <Resource Include="Resources\Slipstream.png" />
+    <Resource Include="Resources\Smoke_Launcher.png" />
+    <Resource Include="Resources\Snipers_Mark.png" />
+    <Resource Include="Resources\Spacewalk.png" />
+    <Resource Include="Resources\Spark_of_Genius.png" />
+    <Resource Include="Resources\Spotters_Lens.png" />
+    <Resource Include="Resources\Stalker.png" />
+    <Resource Include="Resources\Stim.png" />
+    <Resource Include="Resources\Surveillance_Drone.png" />
+    <Resource Include="Resources\Swift_Mend.png" />
+    <Resource Include="Resources\Tempest.png" />
+    <Resource Include="Resources\The_Motherlode.png" />
+    <Resource Include="Resources\Tracker.png" />
+    <Resource Include="Resources\Voices_from_the_Void.png" />
+    <Resource Include="Resources\VTOL_Jets.png" />
+    <Resource Include="Resources\Warlords_Ire.png" />
+    <Resource Include="Resources\Whistler.png" />
+    <Resource Include="Resources\Wrecking_Ball.png" />
+    <Resource Include="Resources\Zipline_Gun.png" />
+  </ItemGroup>
+
+
+</Project>

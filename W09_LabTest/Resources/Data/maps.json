@@ -1,0 +1,56 @@
+[
+  {
+    "id": "e1286a83-ec46-4a6c-a54e-66a0a7d74433",
+    "name": "Kings Canyon",
+    "planet": "Solace",
+    "lore": "Once a simple settlement on the planet Solace dating back to the earliest expeditions to the Frontier, the island that is known as Kings Canyon, didn't thrive until a century later when the now-defunct IMC chose it as a hub for research and development. It housed an airbase, a water treatment plant, and a plethora of other facilities to support the IMC’s operations - operations like a highly classified project on the function of Phase tech, or a radical program to create a simulacra army powered by a single brain. But on the surface, Kings Canyon seemed like a simple IMC installation that, for all its faults, brought stability and jobs to Solace.\r\n\r\nTo blow off steam, IMC soldiers station here would compete in gladiator-esque combat in an area they nicknamed 'Thunderdome'. Years later, when the Syndicate commissioned the rebuilding of the island of Kings Canyon as the home of their newest bloodsport, they insisted Thunderdome remain untouched - a tribute to the earliest known predecessor of what we know today as 'The Apex Games'.",
+    "features": [
+      "Supply ships",
+      "Loot ticks",
+      "Flyers",
+      "Charge towers",
+      "Observation towers",
+      "Explosive holds",
+      "Loot bunkers"
+    ],
+    "image_name": "kings_canyon"
+  },
+  {
+    "id": "59a800cb-e1ca-417c-845a-22b750546778",
+    "name": "World's Edge",
+    "planet": "Talos",
+    "lore": "A harsh planet beset by intense volcanic activity, Talos was once deemed uninhabitable, and only small luddite settlements took root there. However, it became a hotbed of IMC activity when a rare mineral compound was discovered beneath its surface. Heat-reducing towers were built to super-cool its natural lava flows to allow resource extraction - the facility that housed them was optimistically dubbed “New Dawn”, and the town of World’s Edge grew around it.\r\n\r\nDecades ago, an explosion in one of the towers covered the surrounding area in a lethal flash freeze. World’s Edge was abandoned, its only remaining inhabitants a small community of hunters who once spurned modern technology (but tentatively accepted it again under the guidance of their beloved local hero, Bloodhound). However, its ruins and the planet’s energy-rich soil drew the attention of two critical groups: the Mercenary Syndicate and Hammond Robotics. After the Repulsor attack on King's Canyon and the various attempts to rebuild it proved too much trouble than they were worth, World’s Edge became the second home of the Apex Games and a key operational center for Hammond Robotics.",
+    "features": [
+      "Geysers",
+      "Cargo bots",
+      "Loot vaults",
+      "Lava fissures",
+      "Rising blast walls",
+      "Train"
+    ],
+    "image_name": "worlds_edge"
+  },
+  {
+    "id": "597073ae-8820-4c92-9e42-350250cb7681",
+    "name": "Olympus",
+    "planet": "Psamathe",
+    "lore": "Olympus was a city built on dreams. Built in 2640 by billionaire humanitarian Lillian Peck[1], this utopia floating in clouds above Psamathe was once a place where the brightest minds in the Outlands could gather and exchange ideas, leading to breakthroughs in the sciences and arts. Olympus produced a number of breakthroughs for the Outlands including developments in eco-friendly Jump Drives for short-distance vessels, a Phase Technology for immediate transportation called the Phase Runner, and drone technology for health and security systems.[1]\r\n\r\nAll dreams come to an end however, and this one ended explosively: the Phase Runner accident in an experimental research facility led to the creation of the Phase Rift (a massive bubble of Phase energy), and the Outlands’ best and brightest quickly abandoned the city.\r\n\r\nHowever, Olympus itself was maintained by advanced computer systems, so it quickly found new buyers in the Outlands’ elite. For 40 years, it served as a lavish vacation spot with the Rift as a tourist attraction. Unfortunately, the Rift grew unstable overtime, and Olympus was fully evacuated six months ago. Now Hammond Robotics, with the support of the Mercenary Syndicate, has transformed Olympus into a new stage for the Apex Games – though why is anyone’s guess.",
+    "features": [
+      "Phase Runner",
+      "Loot MRVNs",
+      "Icarus Bridge"
+    ],
+    "image_name": "olympus"
+  },
+  {
+    "id": "da4adf90-f730-4a15-a70a-8efd39d3e24c",
+    "name": "Storm Point",
+    "planet": "Gaea",
+    "lore": "This deserted island wasn't always so deserted. Part of the New Antillia Archipelago[1], this beautiful island teeming with plentiful resources was one of the first places where early IMC expeditions made landfall on the planet Gaea. However, the area was isolated and beset by tropical storms. A permanent settlement was established on a nearby coastline – today known as the city of Suotamo – and power-generating storm catchers were built on Storm Point to meet the growing city’s energy needs.\r\n\r\nWhen the IMC pulled out of the Outlands, the storm catchers fell into disrepair. Eventually, one finally stopped working – but not on its own. It had been pulled down, and its absence exacerbated the storm that surrounded the island. A survey of the area revealed the remains of several unique settlements built across the centuries, but no survivors. One such settlement was erected around 2716, after the IMS Hestia-01, an IMC vessel, crash-landed on the southern tip of the island. [2] The people of Gaea abandoned the island for many years, apart from the occasional scavenger or pirate group that attempted to loot what was left behind. Until, of course, it caught the eye of the Mercenary Syndicate, who saw it as a perfect location for the Apex Games.",
+    "features": [
+      "Gravity Cannons",
+      "Wildlife"
+    ],
+    "image_name": "storm_point"
+  }
+]

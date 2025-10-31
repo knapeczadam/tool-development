@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="W05_DataBinding.ElementToElement.BindingMode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:W05_DataBinding.ElementToElement"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Slider x:Name="sliderFontSize" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Width="468" Height="51" TickPlacement="BottomRight" Value="10" Minimum="1" Maximum="40"/>
+        <Label x:Name="lblText" 
+               Content="Hello World!" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               Height="186" 
+               Width="280" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" 
+               FontSize="{Binding Value, ElementName=sliderFontSize, Mode=TwoWay}"/>
+        <Button x:Name="btnSetSmall" Content="Small" HorizontalAlignment="Left" Margin="85,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.948,-0.367" Height="39" Width="128" Click="btnSetSmall_Click"/>
+        <Button x:Name="btnSetMedium" Content="Medium" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top" Height="35" Width="140" Click="btnSetMedium_Click"/>
+        <Button x:Name="btnSetLarge" Content="Large" HorizontalAlignment="Left" Margin="576,368,0,0" VerticalAlignment="Top" Height="38" Width="162" Click="btnSetLarge_Click"/>
+
+    </Grid>
+</UserControl>

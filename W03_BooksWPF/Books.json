@@ -1,0 +1,74 @@
+[
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "genre": "Dystopian",
+    "price": 9.99,
+    "is_available": true,
+    "description": "A dystopian novel set in a totalitarian society under constant surveillance."
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "year": 1937,
+    "genre": "Fantasy",
+    "price": 12.99,
+    "is_available": true,
+    "description": "A fantasy adventure about a hobbit's journey to reclaim a lost kingdom."
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "genre": "Romance",
+    "price": 7.99,
+    "is_available": false,
+    "description": "A classic romance novel exploring themes of love and social standing."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "year": 1965,
+    "genre": "Science Fiction",
+    "price": 14.99,
+    "is_available": true,
+    "description": "An epic science fiction saga set on the desert planet of Arrakis."
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "genre": "Literary Fiction",
+    "price": 11.99,
+    "is_available": true,
+    "description": "A novel about the American dream and the excesses of the Jazz Age."
+  },
+  {
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "year": 1951,
+    "genre": "Science Fiction",
+    "price": 13.99,
+    "is_available": true,
+    "description": "A science fiction series about the fall and rise of a galactic empire."
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "genre": "Fantasy",
+    "price": 19.99,
+    "is_available": true,
+    "description": "An epic fantasy tale of the quest to destroy a powerful ring."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "genre": "Dystopian",
+    "price": 10.99,
+    "is_available": false,
+    "description": "A dystopian novel exploring a future society driven by technology and control."
+  }
+]

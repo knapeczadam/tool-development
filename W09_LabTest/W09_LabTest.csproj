@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Data\" />
+    <Folder Include="Resources\Images\legends\" />
+    <Folder Include="Resources\Images\maps\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Data\legends.json" />
+    <None Remove="Resources\Data\maps.json" />
+    <None Remove="Resources\Data\mvps.json" />
+    <None Remove="Resources\Images\grunge_bg.jpg" />
+    <None Remove="Resources\Images\legends\ash.png" />
+    <None Remove="Resources\Images\legends\ballistic.png" />
+    <None Remove="Resources\Images\legends\bangalore.png" />
+    <None Remove="Resources\Images\legends\bloodhound.png" />
+    <None Remove="Resources\Images\legends\caustic.png" />
+    <None Remove="Resources\Images\legends\conduit.png" />
+    <None Remove="Resources\Images\legends\crypto.png" />
+    <None Remove="Resources\Images\legends\fuse.png" />
+    <None Remove="Resources\Images\legends\gibraltar.png" />
+    <None Remove="Resources\Images\legends\horizon.png" />
+    <None Remove="Resources\Images\legends\lifeline.png" />
+    <None Remove="Resources\Images\legends\loba.png" />
+    <None Remove="Resources\Images\legends\mad maggie.png" />
+    <None Remove="Resources\Images\legends\mirage.png" />
+    <None Remove="Resources\Images\legends\newcastle.png" />
+    <None Remove="Resources\Images\legends\octane.png" />
+    <None Remove="Resources\Images\legends\pathfinder.png" />
+    <None Remove="Resources\Images\legends\rampart.png" />
+    <None Remove="Resources\Images\legends\revenant.png" />
+    <None Remove="Resources\Images\legends\seer.png" />
+    <None Remove="Resources\Images\legends\valkyrie.png" />
+    <None Remove="Resources\Images\legends\vantage.png" />
+    <None Remove="Resources\Images\legends\wattson.png" />
+    <None Remove="Resources\Images\legends\wraith.png" />
+    <None Remove="Resources\Images\maps\kings_canyon.png" />
+    <None Remove="Resources\Images\maps\olympus.png" />
+    <None Remove="Resources\Images\maps\storm_point.png" />
+    <None Remove="Resources\Images\maps\worlds_edge.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Data\legends.json" />
+    <EmbeddedResource Include="Resources\Data\maps.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\legends\ballistic.png" />
+    <Resource Include="Resources\Images\legends\conduit.png" />
+    <Resource Include="Resources\Images\legends\vantage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\grunge_bg.jpg" />
+    <Resource Include="Resources\Images\legends\ash.png" />
+    <Resource Include="Resources\Images\legends\bangalore.png" />
+    <Resource Include="Resources\Images\legends\bloodhound.png" />
+    <Resource Include="Resources\Images\legends\caustic.png" />
+    <Resource Include="Resources\Images\legends\crypto.png" />
+    <Resource Include="Resources\Images\legends\fuse.png" />
+    <Resource Include="Resources\Images\legends\gibraltar.png" />
+    <Resource Include="Resources\Images\legends\horizon.png" />
+    <Resource Include="Resources\Images\legends\lifeline.png" />
+    <Resource Include="Resources\Images\legends\loba.png" />
+    <Resource Include="Resources\Images\legends\mad maggie.png" />
+    <Resource Include="Resources\Images\legends\mirage.png" />
+    <Resource Include="Resources\Images\legends\newcastle.png" />
+    <Resource Include="Resources\Images\legends\octane.png" />
+    <Resource Include="Resources\Images\legends\pathfinder.png" />
+    <Resource Include="Resources\Images\legends\rampart.png" />
+    <Resource Include="Resources\Images\legends\revenant.png" />
+    <Resource Include="Resources\Images\legends\seer.png" />
+    <Resource Include="Resources\Images\legends\valkyrie.png" />
+    <Resource Include="Resources\Images\legends\wattson.png" />
+    <Resource Include="Resources\Images\legends\wraith.png" />
+    <Resource Include="Resources\Images\maps\kings_canyon.png" />
+    <Resource Include="Resources\Images\maps\olympus.png" />
+    <Resource Include="Resources\Images\maps\storm_point.png" />
+    <Resource Include="Resources\Images\maps\worlds_edge.png" />
+  </ItemGroup>
+
+</Project>

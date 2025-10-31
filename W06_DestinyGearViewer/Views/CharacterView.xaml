@@ -1,0 +1,217 @@
+﻿<UserControl x:Class="W06_DestinyGearViewer.Views.CharacterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:W06_DestinyGearViewer.Views"
+             xmlns:viewModels="clr-namespace:W06_DestinyGearViewer.ViewModels"
+             xmlns:controls="clr-namespace:W06_DestinyGearViewer.Controls"
+             mc:Ignorable="d" 
+             Height="580"
+             Width="677">
+    <Grid x:Name="RootGrid">
+        <Grid.DataContext>
+            <viewModels:CharacterViewModel />
+        </Grid.DataContext>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110*" />
+            <ColumnDefinition Width="495*" />
+            <ColumnDefinition Width="75*" />
+        </Grid.ColumnDefinitions>
+
+        <!--<Image Source="/MockUp.png"
+               Grid.ColumnSpan="3" />-->
+
+        <!-- LEFT -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="69*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75*" />
+                <ColumnDefinition Width="35*" />
+            </Grid.ColumnDefinitions>
+
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[0]}"
+                                Grid.ColumnSpan="2"
+                                Command="{Binding ItemClickedCommand}" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[1]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="2" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[2]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="4" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[3]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="6" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[4]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="8" />
+
+        </Grid>
+
+
+        <!-- MIDDLE -->
+        <Grid Grid.Column="1">
+
+            <Label HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Content="{Binding CharacterData.BaseLevel }"
+                   Foreground="LightGray"
+                   FontFamily="MS UI Gothic"
+                   FontSize="100"
+                   FontWeight="Bold"
+                   Margin="11,-22,0,0" />
+            <controls:ColoredIcon IconSource="{Binding CharacterData.GrimoireIconPath, Converter={StaticResource convPathToImage}}"
+                                  Foreground="LightGray"
+                                  Width="17"
+                                  Height="17"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Top"
+                                  Margin="18,72,0,0" />
+
+            <Label Content="{Binding CharacterData.GrimoireScore}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Foreground="LightGray"
+                   FontFamily="MS UI Gothic"
+                   FontSize="25"
+                   FontWeight="Bold"
+                   Margin="39,64,0,0" />
+
+            <controls:ColoredIcon IconSource="{Binding CharacterData.LighLevelIconPath, Converter={StaticResource convPathToImage}}"
+                                  Foreground="Yellow"
+                                  Width="25"
+                                  Height="25"
+                                  HorizontalAlignment="Right"
+                                  VerticalAlignment="Top"
+                                  Margin="0,2,100,0" />
+
+            <Label Content="{Binding CharacterData.LightLevel}"
+                   Foreground="Yellow"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   FontSize="55"
+                   FontWeight="Bold"
+                   FontFamily="MS UI Gothic"
+                   Margin="0,-18,13,0" />
+            <controls:ColoredIcon IconSource="/W06_DestinyGearViewer;component/CharacterSilhouette.png"
+                              Foreground="LightGray"
+                                  Margin="114,10,120,10" />
+
+
+            <Grid HorizontalAlignment="Right"
+                  VerticalAlignment="Top"
+                  Margin="0,55,33,0"
+                  Width="50"
+                  DataContext="{Binding CharacterData.Intellect}"
+                  ToolTip="{Binding Name}">
+                <controls:ColoredIcon IconSource="{Binding IconPath, Converter={StaticResource convPathToImage}}"
+                                      Foreground="LightGray"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Top" 
+                                      Width="30"
+                                      Height="30"/>
+                <Label Content="{Binding Value}"
+                       Foreground="LightGray"
+                       FontFamily="MS UI Gothic"
+                       FontSize="16"
+                       Margin="0,30,0,0"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+            </Grid>
+            <Grid HorizontalAlignment="Right"
+                  VerticalAlignment="Top"
+                  Margin="0,129,33,0"
+                  Width="50"
+                  DataContext="{Binding CharacterData.Discipline}"
+                  ToolTip="{Binding Name}">
+                <controls:ColoredIcon IconSource="{Binding IconPath, Converter={StaticResource convPathToImage}}"
+                                      Foreground="LightGray"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Top" 
+                                      Width="30"
+                                      Height="30"/>
+                <Label Content="{Binding Value}"
+                       Foreground="LightGray"
+                       FontFamily="MS UI Gothic"
+                       FontSize="16"
+                       Margin="0,30,0,0"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+            </Grid>
+            <Grid HorizontalAlignment="Right"
+                  VerticalAlignment="Top"
+                  Margin="0,203,33,0"
+                  Width="50"
+                  DataContext="{Binding CharacterData.Strength}"
+                  ToolTip="{Binding Name}">
+                <controls:ColoredIcon IconSource="{Binding IconPath, Converter={StaticResource convPathToImage}}"
+                                      Foreground="LightGray"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Top"
+                                      Width="30"
+                                      Height="30" />
+                <Label Content="{Binding Value}"
+                       Foreground="LightGray"
+                       FontFamily="MS UI Gothic"
+                       FontSize="16"
+                       Margin="0,30,0,0"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+            </Grid>
+
+        </Grid>
+
+        <!-- RIGHT -->
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="27*" />
+                <RowDefinition Height="75*" />
+            </Grid.RowDefinitions>
+
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[5]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="0" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[6]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="2" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[7]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="4" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[8]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="6" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[9]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="8" />
+            <controls:ItemIcon ItemSource="{Binding CharacterData.Items[10]}"
+                                Command="{Binding ItemClickedCommand}"
+                                Grid.Row="10" />
+
+        </Grid>
+
+    </Grid>
+</UserControl>
