@@ -1,0 +1,176 @@
+﻿<Window x:Class="ImageEffectEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageEffectEditor"
+        xmlns:viewModel="clr-namespace:ImageEffectEditor.ViewModel"
+        xmlns:toolkit="clr-namespace:ImageProcessorToolkit;assembly=ImageProcessorToolkit"
+        mc:Ignorable="d"
+        Title="Texture Effect Editor (Ádám Knapecz @DAE11)"
+        Height="600"
+        Width="500">
+    
+    <!-- Data Context -->
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    
+    <!-- Input binding -->
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding UndoCommand}" Key="Z" Modifiers="Control"/>
+        <KeyBinding Command="{Binding RedoCommand}" Key="Y" Modifiers="Control"/>
+    </Window.InputBindings>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- Menu -->
+            <RowDefinition Height="Auto"/>
+            <!-- Images -->
+            <RowDefinition Height="*"/>
+            <!-- Controls -->
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Menu Bar -->
+        <!-- TODO: Bind Commands -->
+        <Menu Grid.Row="0">
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Undo" Command="{Binding UndoCommand}"/>
+                <MenuItem Header="_Redo" Command="{Binding RedoCommand}"/>
+            </MenuItem>
+
+            <MenuItem Header="_Theme">
+                <MenuItem Header="Default" Command="{Binding LoadDefaultThemeCommand}"/>
+                <MenuItem Header="Dark" Command="{Binding LoadDarkThemeCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Image Preview Area -->
+        <!-- TODO: Bind ImageSources -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Original Image -->
+            <Border Grid.Column="0" Margin="5" BorderThickness="1">
+                <Image Stretch="Uniform"
+                       Source="{Binding OriginalImage}"/>
+            </Border>
+
+            <!-- Edited Image -->
+            <Border Grid.Column="1" Margin="5" BorderThickness="1">
+                <Image Stretch="Uniform"
+                       Source="{Binding ProcessedImage}"/>
+            </Border>
+        </Grid>
+
+        <!-- Controls -->
+        <Grid Grid.Row="2" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Effect Settings -->
+            <GroupBox Grid.Column="0" Header="Settings">
+                
+                <!-- TODO: Add a StackPanel with the effect settings (+ proper margins) -->
+                <StackPanel Orientation="Vertical"
+                            Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                    <!-- Grayscale (checkbox) -->
+                    <CheckBox Grid.Row="0"
+                              IsChecked="{Binding ImageSettings.Grayscale, UpdateSourceTrigger=PropertyChanged, Delay=100, FallbackValue=false}"
+                              Margin="5"/>
+                    <Label Grid.Row="0" Grid.Column="1" 
+                           Content="Grayscale"
+                           Margin="5"/>
+                    
+                    <!-- Hue shift (number input) -->
+                    <Label Grid.Row="1" Grid.Column="0"
+                           Content="Hue Shift:"
+                           Margin="5"/>
+                    <TextBox Grid.Row="1" Grid.Column="1"
+                             IsUndoEnabled="false"
+                             Text="{Binding ImageSettings.HueShift, UpdateSourceTrigger=LostFocus, Delay=100, FallbackValue=0}"
+                             Margin="5"/>
+                    
+                    <!-- Saturation (number input / enforce N2 String formatting) -->
+                    <Label Grid.Row="2" Grid.Column="0"
+                           Content="Saturation:"
+                           Margin="5"/>
+                    <TextBox Grid.Row="2" Grid.Column="1"
+                             IsUndoEnabled="false"
+                             Text="{Binding ImageSettings.Saturation, UpdateSourceTrigger=LostFocus, Delay=100, StringFormat=N2, FallbackValue=1.00f}"
+                             Margin="5"/>
+                    
+                    <!-- Overlay Color (dropdown) -->
+                    <Label Grid.Row="3" Grid.Column="0"
+                           Content="Overlay Color:"
+                           Margin="5"/>
+                    <ComboBox Grid.Row="3" Grid.Column="1"
+                              Margin="5"
+                              ItemsSource="{x:Static toolkit:ImageProcessorSettings.AvailableOverlayColors}"
+                              SelectedItem="{Binding ImageSettings.OverlayColor, UpdateSourceTrigger=PropertyChanged}"
+                              />
+                    
+                    <!-- Overlay alpha (number input) -->
+                    <Label Grid.Row="4" Grid.Column="0"
+                           Content="Overlay Alpha:"
+                           Margin="5"/>
+                    <TextBox Grid.Row="4" Grid.Column="1"
+                             IsUndoEnabled="false"
+                             Text="{Binding ImageSettings.OverlayAlpha, UpdateSourceTrigger=LostFocus, Delay=100, FallbackValue=0}"
+                             Margin="5"/>
+                    </Grid>
+                </StackPanel>
+               
+            </GroupBox>
+
+            <!-- Right: Action Buttons  -->
+            <GroupBox Grid.Column="2" Header="Actions" Width="170">
+            <!-- TODO: Add a stackpanel with the following buttons (+ proper margins): -->
+            <StackPanel Orientation="Vertical"
+                        Margin="5"
+                        VerticalAlignment="Center">
+                <!-- Load Texture Button-->
+                <Button Content="Load Texture"
+                        Command="{Binding LoadTextureCommand}"
+                        Style="{DynamicResource DarkButton}"
+                        Margin="5"/>
+                <!-- Load Settings Button-->
+                <Button Content="Load Settings"
+                        Command="{Binding LoadImageSettingsCommand, IsAsync=True}"
+                        Style="{DynamicResource DarkButton}"
+                        Margin="5"/>
+                <!-- Save Settings Button-->
+                <Button Content="Save Settings"
+                        Command="{Binding SaveImageSettingsCommand, IsAsync=True}"
+                        Style="{DynamicResource DarkButton}"
+                        Margin="5"/>
+                <!-- Reset Effects Button-->
+                <Button Content="Reset Effects"
+                        Command="{Binding ResetImageSettingsCommand}"
+                        Style="{DynamicResource DarkButton}"
+                        Margin="5"/>
+            </StackPanel>
+            </GroupBox>
+        </Grid>
+
+    </Grid>
+</Window>
